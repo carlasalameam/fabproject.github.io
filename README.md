@@ -23,3 +23,9 @@ python3 -m http.server 8000
 Sube `index.html` y tus imágenes a la raíz del repositorio. En GitHub, abre Settings → Pages y configura Deploy from a branch → main → /(root). Este trabajo no publica ni activa GitHub Pages automáticamente.
 
 La versión inicial usa ilustraciones SVG propias y marcadores para las fotografías. No contiene nombres, resultados ni avances inventados. Incluye controles de teclado, cierre de panel con Escape y respeta la preferencia de movimiento reducido.
+
+## Foto grupal e instituciones
+
+En `index.html`, edita `const groupPhoto = ""` y escribe la ruta de la foto de los cuatro integrantes, por ejemplo `images/equipo.jpg`. Añade ese archivo al repositorio. Las fichas individuales siguen configurándose en `members`.
+
+La franja institucional contiene por ahora rótulos de texto para UCuenca, Ingeniería Industrial y FabLab; deben sustituirse por los archivos oficiales de sus logotipos cuando estén disponibles. No son reproducciones de los logos de la captura.
