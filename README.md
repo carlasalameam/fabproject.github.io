@@ -28,4 +28,4 @@ La versión inicial usa ilustraciones SVG propias y marcadores para las fotograf
 
 En `index.html`, edita `const groupPhoto = ""` y escribe la ruta de la foto de los cuatro integrantes, por ejemplo `images/equipo.jpg`. Añade ese archivo al repositorio. Las fichas individuales siguen configurándose en `members`.
 
-La franja institucional contiene por ahora rótulos de texto para UCuenca, Ingeniería Industrial y FabLab; deben sustituirse por los archivos oficiales de sus logotipos cuando estén disponibles. No son reproducciones de los logos de la captura.
+La franja institucional usa los tres logos proporcionados por el equipo, guardados en `images/`. Se conservan los archivos originales, sus colores y proporciones. Los contenedores blancos limitan el espacio vacío de las imágenes para equilibrar su presentación en ambos temas.
