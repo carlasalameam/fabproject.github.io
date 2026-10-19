@@ -45,3 +45,5 @@ Todo texto nuevo se redacta primero en español y debe publicarse acompañado de
 ## Semana 2
 
 Publicada en `weeks/week-02.html`. El contenido bilingüe está en `weeks/week-02-content.js` y la interacción de galerías, idioma y tema en `weeks/week-02.js`. Las 20 imágenes se guardan en `images/week-02/`. El video `videos/abeja-cura-sin-audio.mp4` conserva la imagen del original y elimina físicamente la pista de audio. Los descargables de diseño e impresión están pendientes de recibir; añadir enlaces solo cuando existan los archivos y registrar el perfil de máquina para G-code. Las galerías tienen ampliación y navegación con teclado.
+
+La portada de la tarjeta de la semana 2 (`images/week-02/cover.png`) es una ilustración conceptual generada con IA para resumir la lluvia de ideas, CAD, impresión 3D y documentación web. La fotografía original de las abejas impresas permanece como evidencia dentro de la galería de la semana.
