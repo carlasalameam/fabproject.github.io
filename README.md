@@ -32,8 +32,12 @@ La franja institucional usa los tres logos proporcionados por el equipo, guardad
 
 ## Documentación semanal publicada
 
-La semana 1 está en `weeks/week-01.html`, con evidencias en `images/week-01/`. Su tarjeta en `index.html` abre esa página; las otras semanas conservan el panel de contenido pendiente. Para editar la semana 1 modifica directamente su HTML, no `entries`. La documentación semanal está en español; el selector de inglés informa esta disponibilidad y conserva la preferencia al regresar al inicio.
+La semana 1 está en `weeks/week-01.html`, con evidencias en `images/week-01/`. Su tarjeta en `index.html` abre esa página; las otras semanas conservan el panel de contenido pendiente. Para editar la semana 1 modifica directamente su HTML, no `entries`. El español es el idioma fuente. La semana 1 cuenta con traducción completa al inglés en `weeks/week-01-i18n.js`. El selector ES/EN cambia el contenido y conserva la preferencia al regresar al inicio. Las capturas de pantalla se mantienen como evidencias originales; sus pies y textos alternativos tienen traducción.
 
 Los diagramas de flujo y Maslow se representan con HTML/CSS y texto accesible, sin dependencias externas. Los pictogramas son símbolos propios de identificación, no logos oficiales. Las citas numeradas enlazan a la bibliografía. El autor, enlace y licencia del conjunto de datos de Kaggle y la herramienta de IA usada en la ilustración conceptual quedan pendientes de identificación por el equipo. Los enlaces bibliográficos externos no pudieron comprobarse desde el entorno por restricciones de red.
 
 La tarjeta de la semana 1 incluye `images/week-01/cover.png`: ilustración conceptual generada con IA para representar el aprendizaje de herramientas web, el desarrollo de la idea y el dosificador de miel. Es una portada ilustrativa y no evidencia de un prototipo construido. El texto alternativo se adapta al idioma seleccionado.
+
+## Idiomas y alcance de la documentación
+
+Todo texto nuevo se redacta primero en español y debe publicarse acompañado de su traducción al inglés: títulos, párrafos, tablas, diagramas, pies de figura y descripciones accesibles. Al editar la semana 1, actualiza también su diccionario de traducción y comprueba ES → EN → ES. Los títulos bibliográficos se conservan en su idioma de publicación. No añadir predicciones sobre el estado o los próximos pasos del proyecto a las semanas sin que el equipo las solicite; el apartado 6.4 fue eliminado por este motivo.
