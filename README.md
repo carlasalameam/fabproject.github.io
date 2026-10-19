@@ -41,3 +41,7 @@ La tarjeta de la semana 1 incluye `images/week-01/cover.png`: ilustración conce
 ## Idiomas y alcance de la documentación
 
 Todo texto nuevo se redacta primero en español y debe publicarse acompañado de su traducción al inglés: títulos, párrafos, tablas, diagramas, pies de figura y descripciones accesibles. Al editar la semana 1, actualiza también su diccionario de traducción y comprueba ES → EN → ES. Los títulos bibliográficos se conservan en su idioma de publicación. No añadir predicciones sobre el estado o los próximos pasos del proyecto a las semanas sin que el equipo las solicite; el apartado 6.4 fue eliminado por este motivo.
+
+## Semana 2
+
+Publicada en `weeks/week-02.html`. El contenido bilingüe está en `weeks/week-02-content.js` y la interacción de galerías, idioma y tema en `weeks/week-02.js`. Las 20 imágenes se guardan en `images/week-02/`. El video `videos/abeja-cura-sin-audio.mp4` conserva la imagen del original y elimina físicamente la pista de audio. Los descargables de diseño e impresión están pendientes de recibir; añadir enlaces solo cuando existan los archivos y registrar el perfil de máquina para G-code. Las galerías tienen ampliación y navegación con teclado.
