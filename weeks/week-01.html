@@ -1,0 +1,413 @@
+<!doctype html><html lang="es" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Semana 01 · APIA · Fab Academy U Cuenca</title><meta name="description" content="Semana 1: innovación, producto, herramientas digitales y propuesta de un dosificador de miel."><style>
+:root{--bg:#f8fafb;--paper:#fff;--ink:#18394c;--muted:#597282;--blue:#246d9a;--soft:#eaf2f7;--line:#dce5eb;--gold:#c69e57;--header:rgba(248,250,251,.92);color-scheme:light}html[data-theme=dark]{--bg:#101f2a;--paper:#172c39;--ink:#edf5fa;--muted:#afc3cf;--blue:#93cfee;--soft:#203b4c;--line:#355060;--gold:#dfbc7d;--header:rgba(16,31,42,.94);color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}button{border:0}h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}h2{font-size:clamp(36px,4.4vw,58px);line-height:1.13;letter-spacing:-1.5px}p{color:var(--muted)}.wrap{width:min(1160px,calc(100% - 64px));margin:auto}.eyebrow{font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:2.2px;color:var(--blue);display:flex;align-items:center;gap:13px}.eyebrow:before{content:"";width:26px;height:1px;background:var(--gold)}header{position:sticky;top:0;z-index:10;background:var(--header);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:88px;gap:24px}.brand{display:flex;align-items:center;gap:11px}.brand svg{width:35px;height:40px;color:var(--blue)}.brand strong{font-family:Georgia,serif;font-size:29px;letter-spacing:4px;font-weight:400}.brand small{display:block;font-size:8px;letter-spacing:1.8px;color:var(--muted);margin-top:-6px}.navlinks{display:flex;gap:28px;font-size:12px}.tools{display:flex;gap:8px;align-items:center}.tool{background:transparent;border:1px solid var(--line);border-radius:24px;min-width:39px;height:36px;font-size:11px;padding:0 11px}.tool.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}.langs{display:flex;gap:3px}.langs .tool{border:0;min-width:30px;padding:0 8px}.hero{position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:20px;align-items:center;min-height:655px;padding:70px 0 55px}.hero h1{font-size:clamp(55px,6.6vw,86px);line-height:1.06;letter-spacing:-3.5px;margin:26px 0}.hero h1 em{color:var(--blue);font-weight:400}.hero-copy>p{max-width:430px;font-size:15px}.actions{display:flex;gap:22px;align-items:center;margin-top:33px;flex-wrap:wrap}.primary{background:var(--ink);color:var(--bg);padding:14px 23px;border-radius:5px;font-size:12px;display:inline-flex;gap:24px;align-items:center}.textlink{font-size:12px;border-bottom:1px solid var(--line);padding:9px 0}.hero-art{position:relative;height:490px}.orb{position:absolute;inset:28px 0 0;border-radius:50%;background:radial-gradient(ellipse at 40% 40%,var(--paper),var(--soft) 65%,transparent 66%)}.hive-art{position:absolute;width:100%;height:100%;color:var(--blue);overflow:visible}.orbit{stroke:var(--blue);stroke-width:.8;stroke-dasharray:3 7;fill:none;opacity:.3}.hex{fill:var(--paper);stroke:var(--line);stroke-width:1.2}.hex-blue{fill:var(--blue);stroke:var(--blue)}.hex-soft{fill:var(--soft);stroke:var(--line)}.flying{animation:drift 8s ease-in-out infinite;transform-origin:340px 140px}.wing{animation:wing .23s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:bottom center}.art-label{position:absolute;bottom:30px;left:35px;font-size:9px;letter-spacing:2px;color:var(--muted)}.art-note{position:absolute;right:0;top:62px;writing-mode:vertical-rl;font-size:9px;letter-spacing:2px;color:var(--muted)}.hero-bottom{border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:10px;color:var(--muted);letter-spacing:1.3px;text-transform:uppercase}.hero-bottom span:first-child{display:flex;gap:10px;align-items:center}.dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}section{padding:100px 0;scroll-margin-top:20px}.intro{background:var(--paper);border-block:1px solid var(--line)}.intro-grid{display:grid;grid-template-columns:.8fr 1fr;gap:90px;align-items:start}.intro h2{margin-top:24px}.intro-text{padding-top:35px}.intro-text p+p{margin-top:18px}.pillars{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.pill{font-size:10px;border:1px solid var(--line);border-radius:20px;padding:6px 12px;letter-spacing:.5px}.section-top{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:40px}.section-top h2{margin-top:20px}.section-top>p{max-width:310px;font-size:13px}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.person{background:var(--paper);border:1px solid var(--line);border-radius:7px;overflow:hidden}.portrait{height:240px;position:relative;background:var(--soft);display:grid;place-items:center;overflow:hidden}.portrait:before{content:"";width:150px;height:150px;border:1px solid var(--line);transform:rotate(30deg);border-radius:28px}.portrait svg{position:absolute;width:94px;height:115px;color:var(--blue);opacity:.3}.portrait img{position:absolute;width:100%;height:100%;object-fit:cover}.photo-label{position:absolute;bottom:13px;left:15px;font-size:8px;text-transform:uppercase;letter-spacing:1.8px;color:var(--muted)}.person-copy{padding:20px}.person h3{font:22px Georgia,serif}.person-copy p{font-size:12px;margin-top:8px}.person-num{font-size:10px;color:var(--gold);letter-spacing:1px;display:block;margin-bottom:9px}.project{background:var(--soft);border-block:1px solid var(--line)}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.project-visual{height:360px;border:1px solid var(--line);border-radius:7px;position:relative;display:grid;place-items:center;background:var(--paper);overflow:hidden}.project-visual svg{height:280px;width:90%;color:var(--blue)}.visual-caption{position:absolute;left:22px;bottom:18px;font-size:9px;letter-spacing:1.6px;color:var(--muted)}.project h2{margin:20px 0}.project p{font-size:14px}.status{display:inline-flex;align-items:center;gap:8px;padding:5px 10px;border:1px solid var(--line);border-radius:20px;font-size:9px;letter-spacing:.7px;margin-bottom:18px}.project .textlink{display:inline-block;margin-top:20px}.weeks{background:var(--paper)}.weeks-head{margin-bottom:28px;display:flex;justify-content:space-between;gap:16px;align-items:center}.search{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:11px 14px;font:12px system-ui;max-width:100%;width:280px}.week-count{font-size:11px;color:var(--muted)}.week-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.week{padding:22px;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:6px;min-height:155px;transition:transform .2s,border-color .2s;display:flex;flex-direction:column;align-items:start}.week:hover{transform:translateY(-4px);border-color:var(--blue)}.week-top{display:flex;justify-content:space-between;width:100%;font-size:10px;color:var(--blue);letter-spacing:1px}.week-top .arrow{font-size:17px;line-height:1}.week h3{font:21px/1.2 Georgia,serif;margin:17px 0 13px}.week-status{font-size:9px;color:var(--muted);margin-top:auto;display:flex;gap:6px;align-items:center}.week-status:before{content:"";width:4px;height:4px;border:1px solid var(--gold);border-radius:50%}.calendar-note{font-size:11px;margin-top:22px}.empty{padding:30px 0;color:var(--muted)}.closing{padding:65px 0;text-align:center;border-top:1px solid var(--line)}.closing .serif{font-size:clamp(27px,4vw,42px)}.closing p{font-size:12px;margin-top:13px}footer{border-top:1px solid var(--line);padding:24px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:10px;color:var(--muted)}dialog{width:min(680px,calc(100% - 32px));max-height:85dvh;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:38px;box-shadow:0 30px 100px #0003}dialog::backdrop{background:#0b2439a6;backdrop-filter:blur(5px)}.dialog-close{float:right;background:var(--soft);border-radius:50%;width:35px;height:35px;font-size:24px;line-height:1}.dialog-label{font-size:10px;letter-spacing:1.6px;color:var(--blue);margin-bottom:20px}dialog h2{font-size:36px;margin:18px 0 24px}dialog h3{font:23px Georgia,serif;margin:24px 0 10px}dialog p{font-size:14px;white-space:pre-line}.skip{position:fixed;left:20px;top:-100px;z-index:30;background:var(--ink);color:var(--bg);padding:12px}.skip:focus{top:10px}@keyframes drift{0%,100%{transform:translate(0,0) rotate(-5deg)}50%{transform:translate(-18px,16px) rotate(6deg)}}@keyframes wing{to{transform:scaleX(.75) rotate(9deg)}}@media(min-width:1500px){.hero-grid{min-height:720px}}@media(max-width:900px){.navlinks{gap:15px;font-size:11px}.wrap{width:calc(100% - 40px)}.hero-grid{min-height:580px}.hero h1{font-size:62px}.hero-art{height:380px}.intro-grid,.project-grid{gap:40px}.team-grid{grid-template-columns:repeat(2,1fr)}.portrait{height:260px}}@media(max-width:620px){.nav{flex-wrap:wrap;gap:10px;padding:14px 0}.brand strong{font-size:24px}.brand svg{width:27px}.navlinks{order:3;width:100%;justify-content:space-between;padding-top:8px;border-top:1px solid var(--line);font-size:11px}.tool{height:32px}.hero-grid{grid-template-columns:1fr;padding:44px 0 10px;gap:0}.hero h1{font-size:62px;letter-spacing:-2.5px}.hero-copy>p{font-size:14px}.hero-art{height:340px;max-width:390px;width:100%;margin:0 auto}.art-label{left:15px;bottom:15px;font-size:8px}.art-note{font-size:8px}.hero-bottom{font-size:8px;gap:15px;letter-spacing:.6px}.hero-bottom>span:last-child{text-align:right}section{padding:64px 0}.intro-grid,.project-grid{grid-template-columns:1fr;gap:26px}.intro-text{padding:0}.section-top{display:block}.section-top>p{margin-top:20px}.team-grid{gap:12px}.portrait{height:180px}.person-copy{padding:14px}.person h3{font-size:19px}.person-copy p{font-size:11px}.project-visual{height:290px}.project-grid>.project-copy{order:-1}.week-grid{grid-template-columns:1fr 1fr;gap:10px}.week{padding:15px;min-height:155px}.week h3{font-size:19px}.weeks-head{align-items:start;flex-direction:column}.search{width:100%}.footer-inner{align-items:start}.footer-inner>span{max-width:190px;text-align:right}dialog{padding:24px}dialog h2{font-size:30px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+.institution-bar{background:#fff;border-bottom:1px solid #dce5eb}.institutions{display:flex;justify-content:center;align-items:center;gap:38px;padding:15px 0}.institution{color:#143b60;font-family:Arial,sans-serif;font-weight:800;line-height:1.12;text-align:center;min-width:150px}.institution.uc{font-size:28px;letter-spacing:-1px}.institution small{display:block;font-size:9px;letter-spacing:1.3px;font-weight:500;margin-top:5px}.institution.industrial{font-size:17px;text-align:left;border-left:4px solid #b2303f;padding-left:12px}.institution.fablab{font-size:21px;border-left:1px solid #dce5eb;padding-left:30px}.group-photo{margin-bottom:35px;border:1px solid var(--line);border-radius:7px;background:var(--soft);min-height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:30px;text-align:center}.group-photo svg{width:95px;height:75px;color:var(--blue);opacity:.5}.group-photo figcaption{font-size:13px;color:var(--muted)}.group-photo img{width:100%;max-height:480px;object-fit:cover;border-radius:4px}.group-photo.has-photo{padding:0;overflow:hidden}.group-photo.has-photo figcaption{padding:0 20px 20px}.group-photo{margin-inline:0}.navlinks{gap:22px}html{scroll-padding-top:190px}@media(max-width:620px){.institutions{gap:12px;padding:12px 0}.institution{min-width:0;flex:1}.institution.uc{font-size:19px}.institution.industrial{font-size:11px;padding-left:8px}.institution.fablab{font-size:15px;padding-left:10px}.institution small{font-size:7px;letter-spacing:.5px}.group-photo{min-height:230px}.navlinks{gap:15px;justify-content:center}html{scroll-padding-top:210px}}
+/* Los archivos originales se conservan; el contenedor solo limita sus márgenes blancos. */
+.institutions{gap:24px;padding:12px 0}.institution{position:relative;width:210px;max-width:210px;min-width:0;height:80px;overflow:hidden;background:#fff;flex:1;border:1px solid #e7edf1;border-radius:6px}.institution img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 26px);height:auto;display:block;max-width:184px}@media(max-width:620px){.institutions{gap:9px;padding:10px 0}.institution{height:55px}.institution img{width:calc(100% - 12px)}}
+/* Logos integrados en la barra principal, sin franja ni tarjetas. */
+header{background:#102632;color:#edf5fa}.nav{gap:24px;min-height:100px}.brand{flex-shrink:0}.brand small{color:#afc3cf;font-size:9px;letter-spacing:1px;margin-top:0}.brand svg{color:#93cfee}.institutions{display:flex;align-items:center;gap:18px;padding:0;flex:1;justify-content:center;min-width:0}.institution{flex:0 1 112px;width:112px;max-width:112px;height:46px;border:0;border-radius:0;background:transparent}.institution img{width:100%;max-width:none;filter:grayscale(1) invert(1);mix-blend-mode:screen}.navlinks{flex-shrink:0;color:#edf5fa;gap:20px}.tools{flex-shrink:0}.tool{border-color:#355060;color:#edf5fa}.tool.active{background:#edf5fa;color:#102632;border-color:#edf5fa}html{scroll-padding-top:125px}@media(max-width:1000px){.nav{gap:14px;flex-wrap:wrap;padding:16px 0}.institutions{order:2;flex:0 0 100%;gap:24px}.navlinks{margin-left:auto}.tools{order:1}.institution{height:42px;flex-basis:105px;max-width:105px}html{scroll-padding-top:180px}}@media(max-width:620px){.nav{gap:12px}.brand{margin-right:auto}.navlinks{order:3;width:100%;margin:0;padding-top:10px;border-top:1px solid #355060}.institutions{gap:18px}.institution{height:36px;flex-basis:90px;max-width:90px}.tools{order:0}html{scroll-padding-top:210px}}
+</style><style>.week-document{max-width:1100px;margin:auto;padding:55px 30px 80px}.week-document h1{font-size:clamp(36px,5vw,60px);line-height:1.1;margin:24px 0}.week-document h2{font-size:32px;margin:0 0 24px}.week-document h3{font:24px/1.3 Georgia,serif;margin:28px 0 16px}.week-document section{padding:35px 0;scroll-margin-top:150px}.week-document section.level2{border-top:1px solid var(--line)}.week-document section.level3{padding:8px 0}.week-document p{margin:14px 0}.week-document li{margin:9px 0;color:var(--muted)}.week-document strong{color:var(--ink)}.week-document a{color:var(--blue);text-decoration:underline;overflow-wrap:anywhere}.week-document .back{font-size:12px}.week-intro{margin-bottom:38px}.week-document figure{margin:15px 0 25px}.week-document img{width:auto;max-width:100%;height:auto;max-height:300px;object-fit:contain;border:1px solid var(--line);border-radius:5px;background:#fff}.week-document figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:10px}.evidence{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.62fr);gap:30px;align-items:start}.evidence aside{text-align:center}.evidence figcaption{text-align:left}.week-document table{border-collapse:collapse;width:100%;font-size:13px}.week-document td,.week-document th{padding:12px;border:1px solid var(--line);text-align:left}.bibliography li{font-size:13px}.citation{font-size:12px}.diagram{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:25px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.flow-step{padding:18px 12px;background:var(--soft);border:1px solid var(--line);border-radius:5px;position:relative;line-height:1.4;font-size:13px}.flow-step small{display:block;color:var(--blue);margin-bottom:8px;letter-spacing:2px}.flow-step:not(:last-child):after{content:'→';position:absolute;right:-16px;top:40%;color:var(--blue)}.flow-step:nth-child(4):after{content:'↓'}.feedback{font-size:12px}.pyramid{max-width:540px;margin:20px auto;display:flex;flex-direction:column;align-items:center;gap:3px}.tier{padding:16px 2px;text-align:center;color:#fff;line-height:1.25;font-size:13px;clip-path:polygon(5% 0,95% 0,100% 100%,0 100%)}.t1{width:48%;background:#173c55;clip-path:polygon(50% 0,100% 100%,0 100%);padding-top:54px}.t2{width:61%;background:#235675}.t3{width:74%;background:#2a6b8c}.t4{width:87%;background:#347a98}.t5{width:100%;background:#3b849f}.program-icon{display:inline-grid;place-items:center;width:36px;height:36px;margin-right:9px;font:17px system-ui;background:var(--soft);color:var(--blue);border-radius:8px;vertical-align:middle}.week-toc{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0;font-size:12px}.week-toc a{padding:6px 12px;border:1px solid var(--line);border-radius:20px}.language-note{font-size:12px}.week-document .diagram img{max-height:none}@media(max-width:650px){.week-document{padding:30px 20px}.evidence{grid-template-columns:1fr;gap:0}.evidence aside{max-width:380px;width:100%;margin:auto}.flow{grid-template-columns:1fr 1fr;gap:16px}.flow-step:nth-child(2n):after{content:'↓'}.tier{font-size:11px}.diagram{padding:14px}.week-document h2{font-size:28px}.week-document table{font-size:11px}.week-document td,.week-document th{padding:7px}}@media print{header,.week-toc,.back{display:none}.week-document{padding:0}section{break-inside:auto}figure{break-inside:avoid}}</style></head><body><a class="skip" href="#main">Saltar al contenido</a><header><div class="wrap nav"><a class="brand" href="../index.html#home" aria-label="APIA"><svg viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M20 2 38 12.5v21L20 44 2 33.5v-21Z" stroke="currentColor"/><path d="M20 11 30 17v12L20 35 10 29V17Z" stroke="currentColor"/><path d="M20 11v24M10 17l20 12M30 17 10 29" stroke="currentColor" opacity=".4"/></svg><span><strong>APIA</strong><small data-t="brand">Fab Academy U Cuenca</small></span></a><div class="institutions" aria-label="Instituciones"><div class="institution"><img src="../images/ucuenca.png" alt="Universidad de Cuenca" width="2677" height="1505" decoding="async"></div><div class="institution"><img src="../images/ingenieria-industrial.jpg" alt="Ingeniería Industrial" width="200" height="200" decoding="async"></div><div class="institution"><img src="../images/fablab-ucuenca.jpeg" alt="Industrial FabLab UCuenca" width="1472" height="832" decoding="async"></div></div><nav class="navlinks" aria-label="Principal"><a href="../index.html#home">Home</a><a href="../index.html#about">About</a><a href="../index.html#project">Final Project</a></nav><div class="tools"><div class="langs"><button class="tool active" id="es" lang="es" aria-label="Español" aria-pressed="true">ES</button><button class="tool" id="en" lang="en" aria-label="English" aria-pressed="false">EN</button></div><button class="tool" id="theme" aria-label="Activar tema oscuro" aria-pressed="false">◐</button></div></div></header><main id="main" class="week-document"><div class="week-intro"><a class="back" href="../index.html#assignments">← Volver a las asignaciones</a><div class="eyebrow" style="margin-top:25px">SEMANA 01 / DOCUMENTACIÓN</div><h1>Fundamentos del proyecto<br>y herramientas digitales</h1><p id="languageNote" class="language-note"></p><nav class="week-toc" aria-label="Contenido de la semana"><a href="#definiciones-fundamentales">Conceptos</a><a href="#programación-digital-inicial">Herramientas</a><a href="#aplicación-a-nuestro-proyecto-final-dosificador-de-miel">Dosificador de miel</a><a href="#bibliografia">Bibliografía</a></nav></div><p><strong>Bitácora del equipo · Semana 01</strong></p>
+<section id="introducción" class="level2">
+<h2>Introducción</h2>
+<p>Durante la primera semana trabajamos en dos aspectos que servirán de
+base para nuestro proyecto: los fundamentos de innovación y gestión de
+producto, y la preparación de las herramientas digitales para documentar
+el proceso. Revisamos cómo identificar una necesidad, transformar una
+idea en una propuesta y evaluar su viabilidad económica, ambiental y
+social.</p>
+<p>En la parte práctica, organizamos los archivos de trabajo, exploramos
+herramientas de desarrollo web y comenzamos a construir nuestra página
+de documentación. Finalmente, relacionamos estos aprendizajes con la
+propuesta que estamos desarrollando: un dosificador de miel orientado a
+pequeños emprendimientos apícolas.</p>
+</section>
+<section id="definiciones-fundamentales" class="level2">
+<h2>1. Definiciones fundamentales</h2>
+<p>La definición de innovación se apoya en el Manual de Oslo
+(OCDE/Eurostat, 2018; <a class="citation" href="#ref-1" aria-label="Referencia 1">[1]</a>).</p>
+<ul>
+<li><strong>Maker:</strong> persona que aprende mediante la creación, la
+experimentación y la construcción de soluciones. Puede combinar
+herramientas manuales con tecnologías como impresión 3D, corte láser,
+mecanizado CNC y electrónica.</li>
+<li><strong>Fabricación digital:</strong> conjunto de procesos que
+permiten transformar diseños digitales en objetos físicos mediante
+equipos controlados por computadora.</li>
+<li><strong>Creatividad:</strong> capacidad de generar ideas y plantear
+diferentes respuestas frente a una situación o necesidad.</li>
+<li><strong>Innovación:</strong> desarrollo e implementación de un
+producto o proceso nuevo o mejorado que aporta valor. Una idea creativa
+necesita ponerse en práctica y evaluarse para convertirse en una
+innovación.</li>
+<li><strong>Producto:</strong> bien o servicio diseñado para atender una
+necesidad. Su desarrollo requiere considerar a los usuarios, las
+condiciones de uso y los recursos disponibles. Si se busca
+comercializarlo, también debe evaluarse su viabilidad en el
+mercado.</li>
+</ul>
+<p>Estas definiciones nos ayudan a entender que fabricar un objeto es
+solo una parte del proyecto: también debemos explicar para quién se
+diseña, qué problema aborda y cómo comprobaremos su utilidad.</p>
+</section>
+<section id="flujo-de-desarrollo-de-la-idea-al-producto" class="level2">
+<h2>2. Flujo de desarrollo: de la idea al producto</h2>
+<p>El desarrollo de un producto puede organizarse en la siguiente
+secuencia:</p>
+<p><strong>Identificar una necesidad → Generar ideas → Seleccionar una
+propuesta → Diseñar → Construir un prototipo → Probar con usuarios →
+Mejorar → Evaluar su implementación o comercialización.</strong></p>
+<p>Este proceso no es completamente lineal. Las pruebas pueden revelar
+dificultades que nos obliguen a modificar el diseño o incluso a
+replantear la necesidad inicial. Por eso, documentar las decisiones y
+los resultados es importante durante todas las etapas.</p>
+<section id="sostenibilidad-y-objetivos-de-desarrollo-sostenible"
+class="level3">
+<figure class="diagram"><div class="flow" role="img" aria-label="Proceso: identificar una necesidad, generar ideas, seleccionar una propuesta, diseñar, construir un prototipo, probar con usuarios, mejorar, evaluar implementación o comercialización. Las pruebas permiten volver al diseño."><div class="flow-step"><small>01</small><span>Identificar una necesidad</span></div><div class="flow-step"><small>02</small><span>Generar ideas</span></div><div class="flow-step"><small>03</small><span>Seleccionar una propuesta</span></div><div class="flow-step"><small>04</small><span>Diseñar</span></div><div class="flow-step"><small>05</small><span>Construir un prototipo</span></div><div class="flow-step"><small>06</small><span>Probar con usuarios</span></div><div class="flow-step"><small>07</small><span>Mejorar</span></div><div class="flow-step"><small>08</small><span>Evaluar implementación o comercialización</span></div></div><p class="feedback">↶ Las pruebas y las mejoras pueden llevarnos a revisar el diseño o la necesidad inicial.</p><figcaption>Diagrama A. Flujo propuesto de desarrollo del producto. Elaboración propia para organizar el trabajo del equipo; la innovación se aborda conforme al Manual de Oslo <a class="citation" href="#ref-1" aria-label="Referencia 1">[1]</a>.</figcaption></figure><h3>Sostenibilidad y Objetivos de Desarrollo Sostenible</h3>
+<p>Una propuesta sostenible debe analizarse desde tres dimensiones:</p>
+<ul>
+<li><strong>Económica:</strong> costos de fabricación, operación y
+mantenimiento, y posibilidades de continuidad.</li>
+<li><strong>Ambiental:</strong> materiales, consumo de energía, residuos
+y alternativas de reparación o reutilización.</li>
+<li><strong>Social:</strong> utilidad para las personas, accesibilidad y
+condiciones de uso seguro.</li>
+</ul>
+<p>Los Objetivos de Desarrollo Sostenible (ODS) permiten relacionar
+estas decisiones con metas más amplias. En nuestra documentación
+identificaremos los ODS pertinentes y explicaremos de qué manera el
+proyecto podría contribuir a ellos. Vincular una propuesta con un ODS no
+demuestra, por sí solo, que su impacto ya se haya alcanzado.</p>
+</section>
+</section>
+<section id="justificación-del-producto" class="level2">
+<h2>3. Justificación del producto</h2>
+<p>Antes de definir una solución, es necesario conocer a sus posibles
+usuarios y el contexto en el que se utilizará. La justificación del
+producto debe explicar la necesidad identificada, las limitaciones de
+las alternativas existentes y el valor que se espera aportar.</p>
+<section id="necesidades-y-pirámide-de-maslow" class="level3">
+<h3>Necesidades y pirámide de Maslow</h3>
+<p>Referencia conceptual: Maslow (1943; <a class="citation" href="#ref-2" aria-label="Referencia 2">[2]</a>). La representación
+piramidal es una adaptación didáctica posterior, no una figura del
+artículo original.</p>
+<p>La pirámide de Maslow es un modelo que organiza las necesidades
+humanas en cinco niveles: fisiológicas, seguridad, afiliación,
+reconocimiento y autorrealización. Puede utilizarse como referencia para
+reflexionar sobre las necesidades vinculadas con un producto, pero no
+sustituye la investigación con usuarios ni el estudio de mercado.</p>
+<p>En nuestro caso, el proyecto se relaciona con la alimentación y con
+la mejora del proceso de envasado de miel. Para justificarlo, será
+necesario consultar a pequeños productores y conocer cómo realizan
+actualmente la dosificación, qué dificultades encuentran y qué
+características valorarían en un equipo.</p>
+</section>
+<section id="tipos-de-producto" class="level3">
+<figure class="diagram"><div class="pyramid" role="img" aria-label="Jerarquía de necesidades, de la base a la cima: fisiológicas, seguridad, afiliación, reconocimiento y autorrealización."><div class="tier t1">Autorrealización</div><div class="tier t2">Reconocimiento</div><div class="tier t3">Afiliación</div><div class="tier t4">Seguridad</div><div class="tier t5">Fisiológicas</div></div><figcaption>Diagrama B. Representación didáctica de la jerarquía de necesidades. Elaboración propia basada en Maslow (1943) <a class="citation" href="#ref-2" aria-label="Referencia 2">[2]</a>. La pirámide no aparece en el artículo original y no sustituye el análisis de los usuarios.</figcaption></figure><h3>Tipos de producto</h3>
+<ul>
+<li><strong>Bien tangible:</strong> objeto físico que puede fabricarse y
+utilizarse, como el dosificador de miel que proponemos.</li>
+<li><strong>Servicio:</strong> actividad o prestación que atiende una
+necesidad, como capacitación, mantenimiento o asistencia técnica.</li>
+</ul>
+<p>Un producto puede combinar ambos componentes. Por ejemplo, un equipo
+físico puede complementarse con instrucciones de uso y
+mantenimiento.</p>
+</section>
+</section>
+<section id="ciclo-de-vida-del-producto-y-matriz-bcg" class="level2">
+<h2>4. Ciclo de vida del producto y matriz BCG</h2>
+<section id="ciclo-de-vida-del-producto" class="level3">
+<h3>Ciclo de vida del producto</h3>
+<p>Referencia: OpenStax, Principles of Marketing, sección 9.3 (<a class="citation" href="#ref-3" aria-label="Referencia 3">[3]</a>).</p>
+<p>Este modelo describe cómo pueden evolucionar las ventas de un
+producto a lo largo del tiempo:</p>
+<ol type="1">
+<li><strong>Introducción:</strong> el producto llega al mercado y
+comienza a darse a conocer.</li>
+<li><strong>Crecimiento:</strong> aumenta su aceptación y pueden
+ampliarse la producción y la distribución.</li>
+<li><strong>Madurez:</strong> el crecimiento de las ventas se desacelera
+y la competencia puede intensificarse.</li>
+<li><strong>Declive:</strong> disminuye la demanda y se evalúan mejoras,
+nuevos usos o la retirada del producto.</li>
+</ol>
+<p>No todos los productos recorren estas etapas de la misma manera.
+Nuestro proyecto todavía se encuentra en una etapa previa al
+lanzamiento: la definición y el desarrollo de una propuesta.</p>
+</section>
+<section id="matriz-bcg" class="level3">
+<h3>Matriz BCG</h3>
+<p>Referencia: Boston Consulting Group, The Growth Share Matrix
+(<a class="citation" href="#ref-4" aria-label="Referencia 4">[4]</a>).</p>
+<p>La matriz del Boston Consulting Group analiza productos o unidades de
+negocio según dos variables: el crecimiento del mercado y la
+participación relativa frente al principal competidor. Sus categorías
+son:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Categoría</th>
+<th>Crecimiento del mercado</th>
+<th>Participación relativa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interrogante</td>
+<td>Alto</td>
+<td>Baja</td>
+</tr>
+<tr class="even">
+<td>Estrella</td>
+<td>Alto</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td>Vaca lechera</td>
+<td>Bajo</td>
+<td>Alta</td>
+</tr>
+<tr class="even">
+<td>Perro</td>
+<td>Bajo</td>
+<td>Baja</td>
+</tr>
+</tbody>
+</table>
+<p>Esta matriz es diferente del ciclo de vida: una categoría no equivale
+automáticamente a una etapa de introducción, crecimiento, madurez o
+declive. Por ahora no contamos con datos suficientes para ubicar nuestro
+dosificador en ella. La utilizaremos como referencia para un análisis
+posterior, si disponemos de información de mercado.</p>
+</section>
+</section>
+<section id="programación-digital-inicial" class="level2">
+<h2>5. Programación digital inicial</h2>
+<p>Esta parte de la semana se centró en organizar el trabajo y conocer
+las herramientas para desarrollar y documentar una página web.</p>
+<section id="organización-de-la-carpeta-del-proyecto" class="level3"><h3>5.1. Organización de la carpeta del proyecto</h3><div class="evidence"><div>
+
+<p>Creamos una carpeta de trabajo en la sección
+<strong>Documentos</strong> de nuestros equipos para reunir los archivos
+del proyecto. La organización de estos recursos facilita localizar las
+versiones del código, los diseños y las evidencias de las actividades
+realizadas.</p>
+<p>La captura muestra la carpeta <strong>PROJECT</strong> y distintos
+archivos relacionados con las prácticas. Mantener nombres claros y
+separar los recursos por actividad nos ayudará a conservar una
+documentación ordenada.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image1.png" width="240"
+alt="Figura 1. Carpeta PROJECT creada en Documentos para organizar los archivos de trabajo. Fuente: captura de pantalla incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 1. Carpeta PROJECT creada en
+Documentos para organizar los archivos de trabajo. Fuente: captura de
+pantalla incluida por el equipo.</figcaption>
+</figure></aside></div></section>
+<section id="visual-studio-code-y-live-server" class="level3"><h3>5.2. <span class="program-icon" aria-hidden="true">&lt;/&gt;</span>Visual Studio Code y Live Server</h3><div class="evidence"><div>
+
+<p>Documentación de las herramientas: Visual Studio Code <a class="citation" href="#ref-5" aria-label="Referencia 5">[5]</a> y Live
+Server <a class="citation" href="#ref-6" aria-label="Referencia 6">[6]</a>.</p>
+<p><strong>Visual Studio Code</strong> es un editor de código que
+permite crear y modificar archivos de distintos lenguajes. Para nuestra
+página trabajamos con HTML, que estructura el contenido; CSS, que define
+su presentación; y JavaScript, que permite añadir comportamientos
+interactivos.</p>
+<p><strong>Live Server</strong> es una extensión de Visual Studio Code
+que inicia un servidor de desarrollo local y recarga la página al
+guardar los cambios. Nos permite revisar el trabajo en el navegador
+antes de publicarlo. Usar Live Server no sube los archivos a Internet ni
+actualiza GitHub automáticamente.</p>
+<p>Durante la práctica instalamos la extensión y comenzamos a utilizarla
+para visualizar la página de prueba. Las herramientas de inspección del
+navegador son un recurso distinto: permiten examinar la estructura, los
+estilos y posibles errores de la página.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image2.jpeg" width="240"
+alt="Figura 2. Extensión Live Server en Visual Studio Code, utilizada para la vista previa local del sitio. Fuente: captura incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 2. Extensión Live Server en Visual
+Studio Code, utilizada para la vista previa local del sitio. Fuente:
+captura incluida por el equipo.</figcaption>
+</figure></aside></div></section>
+<section id="exploración-de-datos-en-kaggle" class="level3"><h3>5.3. <span class="program-icon" aria-hidden="true">▤</span>Exploración de datos en Kaggle</h3><div class="evidence"><div>
+
+<p>Documentación de la plataforma: Kaggle Datasets <a class="citation" href="#ref-7" aria-label="Referencia 7">[7]</a>.</p>
+<p><strong>Kaggle</strong> es una plataforma que reúne conjuntos de
+datos, cuadernos de análisis y recursos para aprender sobre ciencia de
+datos. En esta actividad exploramos un conjunto de datos denominado
+«amazon», con información de productos, categorías y precios, para
+utilizarlo como recurso de una página web de prueba.</p>
+<p>Este ejercicio nos permitió relacionar el contenido de una página con
+datos organizados en tablas. Antes de publicar o redistribuir el
+conjunto de datos, debemos registrar su autor, enlace y licencia de uso;
+esos datos no aparecen identificados en el documento de esta semana.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image3.png" width="290"
+alt="Figura 3. Vista del conjunto de datos «amazon» consultado en Kaggle. Fuente: captura incluida por el equipo; autor, enlace y licencia del conjunto de datos pendientes de registrar." />
+<figcaption aria-hidden="true">Figura 3. Vista del conjunto de datos
+«amazon» consultado en Kaggle. Fuente: captura incluida por el equipo;
+autor, enlace y licencia del conjunto de datos pendientes de
+registrar.</figcaption>
+</figure></aside></div></section>
+<section id="github-y-el-repositorio-de-documentación" class="level3"><h3>5.4. <span class="program-icon" aria-hidden="true">⑂</span>GitHub y el repositorio de documentación</h3><div class="evidence"><div>
+
+<p>Documentación oficial: repositorios de GitHub <a class="citation" href="#ref-8" aria-label="Referencia 8">[8]</a> y GitHub Pages
+<a class="citation" href="#ref-9" aria-label="Referencia 9">[9]</a>.</p>
+<p><strong>Git</strong> es un sistema de control de versiones que
+permite registrar cambios en los archivos. <strong>GitHub</strong> es
+una plataforma en línea que aloja repositorios Git y facilita compartir
+código y colaborar. Un repositorio reúne los archivos de un proyecto y
+su historial de cambios.</p>
+<p>Durante la actividad accedimos a GitHub y creamos el repositorio
+<strong>fabproject.github.io</strong>, destinado a almacenar nuestra
+página. La captura corresponde a su estado inicial, antes de incorporar
+el contenido. Tener un repositorio no equivale a tener una web
+publicada: <strong>GitHub Pages</strong> es el servicio que puede
+publicar sus archivos estáticos cuando se configura para ello.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image4.png" width="290"
+alt="Figura 4. Estado inicial del repositorio fabproject.github.io en GitHub. Fuente: captura de pantalla incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 4. Estado inicial del repositorio
+fabproject.github.io en GitHub. Fuente: captura de pantalla incluida por
+el equipo.</figcaption>
+</figure></aside></div></section>
+<section id="primera-página-de-prueba" class="level3"><h3>5.5. Primera página de prueba</h3><div class="evidence"><div>
+
+<p>Con apoyo de la guía de trabajo desarrollamos una primera interfaz
+para explorar información de productos. La captura muestra la página
+<strong>Amazon Industrial Pulse</strong>, con opciones de búsqueda,
+filtros y tarjetas de información.</p>
+<p>La práctica nos ayudó a reconocer elementos de una interfaz web y a
+revisar su presentación. La imagen documenta su aspecto, pero no
+demuestra por sí sola la exactitud de los indicadores mostrados ni
+valida que todas sus funciones hayan sido probadas.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image5.png" width="290"
+alt="Figura 5. Interfaz de la página de prueba Amazon Industrial Pulse, con búsqueda, filtros y tarjetas informativas. Fuente: captura incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 5. Interfaz de la página de prueba
+Amazon Industrial Pulse, con búsqueda, filtros y tarjetas informativas.
+Fuente: captura incluida por el equipo.</figcaption>
+</figure></aside></div></section>
+<section id="apoyo-de-codex-y-edición-del-código" class="level3"><h3>5.6. <span class="program-icon" aria-hidden="true">⌘</span>Apoyo de Codex y edición del código</h3><div class="evidence"><div>
+
+<p>Documentación oficial de Codex <a class="citation" href="#ref-10" aria-label="Referencia 10">[10]</a>.</p>
+<p><strong>Codex</strong> es una herramienta de asistencia con
+inteligencia artificial para tareas de programación. Puede ayudar a
+generar, explicar y modificar código a partir de instrucciones, y
+trabajar con un repositorio cuando dispone del acceso autorizado. La
+revisión de los cambios sigue siendo responsabilidad del equipo.</p>
+<p>Utilizamos esta asistencia para preparar el entorno de trabajo y
+desarrollar la estructura inicial de nuestra página. El objetivo es
+mantener un proceso en el que podamos solicitar cambios, revisar el
+resultado y registrar las versiones aprobadas en GitHub. El editor y el
+navegador nos permiten comprobar el código y su presentación.</p>
+
+
+</div><aside><figure>
+<img src="../images/week-01/image6.png" width="290"
+alt="Figura 6. Uso de Codex para preparar el entorno de trabajo del repositorio. Fuente: captura incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 6. Uso de Codex para preparar el
+entorno de trabajo del repositorio. Fuente: captura incluida por el
+equipo.</figcaption>
+</figure><figure>
+<img src="../images/week-01/image7.png" width="290"
+alt="Figura 7. Archivo index.html de la página APIA abierto en el editor de código. Fuente: captura incluida por el equipo." />
+<figcaption aria-hidden="true">Figura 7. Archivo index.html de la página
+APIA abierto en el editor de código. Fuente: captura incluida por el
+equipo.</figcaption>
+</figure></aside></div></section>
+</section>
+<section id="aplicación-a-nuestro-proyecto-final-dosificador-de-miel"
+class="level2">
+<h2>6. Aplicación a nuestro proyecto final: dosificador de miel</h2>
+<section id="enfoque-de-la-propuesta" class="level3">
+<h3>6.1. Enfoque de la propuesta</h3>
+<p>Para los requisitos de calidad de la miel, se toma como referencia la
+Norma para la miel CXS 12-1981 del Codex Alimentarius (<a class="citation" href="#ref-11" aria-label="Referencia 11">[11]</a>).</p>
+<p>Durante esta etapa nos hemos enfocado en una propuesta de
+<strong>dosificador de miel para pequeños emprendimientos
+apícolas</strong>. Nos interesa este proceso porque la viscosidad de la
+miel puede dificultar su manipulación y el llenado de los envases.
+Queremos explorar una solución que facilite dosificar cantidades de
+forma controlada y que permita evaluar las pérdidas de producto durante
+el envasado.</p>
+<p>La cristalización de la miel es un fenómeno natural y no implica por
+sí sola deterioro o contaminación. Si el diseño incorpora calentamiento
+para facilitar el flujo, será necesario estudiar su efecto y controlar
+tanto la temperatura como el tiempo de exposición. El calentamiento
+excesivo puede afectar atributos de calidad; no afirmamos que el
+prototipo vaya a evitar alteraciones nutricionales o microbiológicas sin
+realizar las pruebas correspondientes.</p>
+</section>
+<section id="idea-inicial-de-funcionamiento" class="level3"><h3>6.2. Idea inicial de funcionamiento</h3><div class="evidence"><div>
+
+<p>La ilustración conceptual presenta un depósito con calentamiento
+controlado, una boquilla dosificadora y una plataforma de pesaje.
+También incorpora una propuesta de etiquetado manual asistido como
+posible complemento. Esta imagen sirve para discutir alternativas con el
+equipo y no representa un equipo construido ni un diseño definitivo.</p>
+<p>Las temperaturas, capacidades y cantidades que aparecen en la
+ilustración son referencias de la propuesta generada, no parámetros
+técnicos validados. Debemos definirlos mediante investigación y pruebas.
+También será necesario evaluar los materiales en contacto con la miel,
+la facilidad de limpieza y la seguridad del sistema eléctrico y
+térmico.</p>
+
+</div><aside><figure>
+<img src="../images/week-01/image8.png" width="430"
+alt="Figura 8. Propuesta conceptual de una estación de dosificación y envasado de miel. Imagen elaborada mediante inteligencia artificial a partir de las ideas presentadas por los integrantes del equipo; no corresponde a un prototipo construido." />
+<figcaption aria-hidden="true">Figura 8. Propuesta conceptual de una
+estación de dosificación y envasado de miel. Imagen elaborada mediante
+inteligencia artificial a partir de las ideas presentadas por los
+integrantes del equipo; no corresponde a un prototipo
+construido.</figcaption>
+</figure></aside></div></section>
+<section id="justificación-y-relación-con-los-ods" class="level3">
+<h3>6.3. Justificación y relación con los ODS</h3>
+<p>Marco de referencia: Objetivos de Desarrollo Sostenible de Naciones
+Unidas <a class="citation" href="#ref-12" aria-label="Referencia 12">[12]</a>.</p>
+<p>La propuesta se relaciona con el procesamiento de un alimento y con
+las necesidades operativas de pequeños productores. Su utilidad deberá
+comprobarse mediante consultas a usuarios y ensayos que permitan evaluar
+la cantidad dosificada, la repetibilidad del llenado, las pérdidas de
+miel y la facilidad de uso y limpieza.</p>
+<p>Identificamos dos ODS con los que el proyecto podría vincularse:</p>
+<ul>
+<li><strong>ODS 9 · Industria, innovación e infraestructura:</strong>
+mediante la exploración de un equipo desarrollado con herramientas de
+fabricación digital y adaptado a un contexto productivo local.</li>
+<li><strong>ODS 12 · Producción y consumo responsables:</strong>
+mediante la evaluación de alternativas para reducir pérdidas de miel y
+facilitar el mantenimiento del equipo.</li>
+</ul>
+<p>Estas son contribuciones propuestas, todavía pendientes de demostrar.
+No contamos aún con resultados que permitan afirmar una reducción del
+desperdicio o del consumo energético.</p>
+</section>
+<section id="estado-actual-y-próximos-pasos" class="level3">
+<h3>6.4. Estado actual y próximos pasos</h3>
+<p>El proyecto se encuentra en la fase de definición conceptual. Los
+próximos pasos son conocer el proceso de envasado de los usuarios,
+precisar los requisitos y seleccionar los componentes y materiales.
+Posteriormente podremos fabricar un primer prototipo y registrar sus
+pruebas, limitaciones y mejoras.</p>
+</section>
+</section>
+<section class="bibliography" id="bibliografia"><h2>Bibliografía y recursos</h2><p>Las referencias conceptuales se distinguen de las capturas de pantalla, que fueron aportadas por el equipo.</p><ol>
+<li id="ref-1">OCDE/Eurostat. (2018). <i>Oslo Manual 2018: Guidelines for Collecting, Reporting and Using Data on Innovation</i> (4.ª ed.). OECD Publishing. <a href="https://doi.org/10.1787/9789264304604-en">https://doi.org/10.1787/9789264304604-en</a>.</li>
+<li id="ref-2">Maslow, A. H. (1943). A theory of human motivation. <i>Psychological Review, 50</i>(4), 370–396. <a href="https://doi.org/10.1037/h0054346">https://doi.org/10.1037/h0054346</a>.</li>
+<li id="ref-3">OpenStax. (2023). <i>Principles of Marketing</i>. Sección 9.3: The Product Life Cycle. <a href="https://openstax.org/books/principles-marketing/pages/9-3-the-product-life-cycle">Texto del capítulo</a>.</li>
+<li id="ref-4">Boston Consulting Group. (s. f.). <i>The Growth Share Matrix</i>. <a href="https://www.bcg.com/about/overview/our-history/growth-share-matrix">Descripción de la matriz</a>.</li>
+<li id="ref-5">Microsoft. (s. f.). <i>Documentation for Visual Studio Code</i>. <a href="https://code.visualstudio.com/docs">Documentación</a>.</li>
+<li id="ref-6">Dey, R. (s. f.). <i>Live Server</i> [Extensión para Visual Studio Code]. Visual Studio Marketplace. <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Ficha de la extensión</a>.</li>
+<li id="ref-7">Kaggle. (s. f.). <i>Datasets documentation</i>. <a href="https://www.kaggle.com/docs/datasets">Documentación</a>. Esta referencia describe la plataforma; no sustituye la cita del conjunto de datos «amazon», cuyo autor y enlace debe completar el equipo.</li>
+<li id="ref-8">GitHub. (s. f.). <i>Documentación de repositorios</i>. <a href="https://docs.github.com/es/repositories">Documentación</a>.</li>
+<li id="ref-9">GitHub. (s. f.). <i>Documentación de GitHub Pages</i>. <a href="https://docs.github.com/es/pages">Documentación</a>.</li>
+<li id="ref-10">OpenAI. (s. f.). <i>Codex</i>. <a href="https://developers.openai.com/codex/">Documentación</a>.</li>
+<li id="ref-11">Comisión del Codex Alimentarius (FAO/OMS). (1981, con revisiones y enmiendas posteriores). <i>Norma para la miel, CXS 12-1981</i>. <a href="https://workspace.fao.org/sites/codex/Standards/CXS%2012-1981/CXS_012e.pdf">Documento oficial</a>.</li>
+<li id="ref-12">Naciones Unidas. (s. f.). <i>Objetivos de Desarrollo Sostenible</i>. <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/">Descripción de los objetivos</a>.</li>
+</ol><h3>Créditos de las imágenes</h3><p>Figuras 1–7: capturas proporcionadas por el equipo. Figura 8: imagen conceptual elaborada con inteligencia artificial a partir de las ideas de los integrantes; herramienta específica pendiente de registrar. Diagramas A y B: elaboración gráfica propia, con referencias indicadas en sus pies. Los símbolos de herramientas son pictogramas propios de identificación y no logotipos oficiales.</p></section></main><script>let language='es';try{language=localStorage.getItem('apia-language')==='en'?'en':'es';document.documentElement.dataset.theme=localStorage.getItem('apia-theme')||'light'}catch{}function renderControls(){['es','en'].forEach(l=>{document.getElementById(l).classList.toggle('active',language===l);document.getElementById(l).setAttribute('aria-pressed',String(l===language))});const dark=document.documentElement.dataset.theme==='dark';document.getElementById('theme').setAttribute('aria-pressed',String(dark));document.getElementById('theme').setAttribute('aria-label',language==='es'?(dark?'Activar tema claro':'Activar tema oscuro'):(dark?'Switch to light theme':'Switch to dark theme'));document.getElementById('languageNote').textContent=language==='en'?'This weekly report is currently available in Spanish.':'Documentación de la semana disponible en español.'}['es','en'].forEach(l=>document.getElementById(l).onclick=()=>{language=l;try{localStorage.setItem('apia-language',l)}catch{}renderControls()});document.getElementById('theme').onclick=()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('apia-theme',next)}catch{}renderControls()};renderControls();</script></body></html>
