@@ -193,6 +193,24 @@ Object.assign(weekTranslations, {
   "7. Conclusión de la semana": "7. Weekly conclusion",
   "Conclusión": "Conclusion"
 });
+Object.assign(weekTranslations, {
+  "8. Archivos descargables y pruebas online": "8. Downloadable files and online exercises",
+  "Archivos originales de las pruebas de software aportados por el equipo. Se conservan sin modificar su contenido y se pueden descargar individualmente o en el ZIP completo.": "Original software exercise files supplied by the team. Their contents are preserved without modification and can be downloaded individually or in the complete ZIP.",
+  "Descargables": "Downloads",
+  "Prueba 2D · LibreCAD": "2D exercise · LibreCAD",
+  "Descargar DXF": "Download DXF",
+  "Prueba 2D · QCAD": "2D exercise · QCAD",
+  "Prueba 2D · AutoCAD": "2D exercise · AutoCAD",
+  "Descargar DWG": "Download DWG",
+  "Prueba 3D · Autodesk Fusion": "3D exercise · Autodesk Fusion",
+  "Descargar F3D": "Download F3D",
+  "Prueba identificada como Tinkercad · archivo Fusion": "Exercise labeled Tinkercad · Fusion file",
+  "Descargar todos los archivos (ZIP original)": "Download all files (original ZIP)",
+  "Pruebas en plataformas online": "Online platform exercises",
+  "Abrir la prueba de SketchUp ↗": "Open the SketchUp exercise ↗",
+  "Abrir la prueba de Tinkercad ↗": "Open the Tinkercad exercise ↗",
+  "El archivo aportado con el nombre de Tinkercad tiene extensión F3D, correspondiente a Autodesk Fusion; el enlace online se ofrece por separado. Los permisos de acceso a los modelos dependen de cada plataforma.": "The file supplied with Tinkercad in its name has the F3D extension, which belongs to Autodesk Fusion; the online link is provided separately. Model access permissions depend on each platform."
+});
 const attributeTranslations = {
   "Figura 1. Carpeta PROJECT creada en Documentos para organizar los archivos de trabajo. Fuente: captura de pantalla incluida por el equipo.": "Figure 1. PROJECT folder created in Documents to organize working files. Source: screenshot supplied by the team.",
   "Figura 2. Extensión Live Server en Visual Studio Code, utilizada para la vista previa local del sitio. Fuente: captura incluida por el equipo.": "Figure 2. Live Server extension in Visual Studio Code, used for local website previews. Source: screenshot supplied by the team.",
