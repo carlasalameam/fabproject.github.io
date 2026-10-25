@@ -69,3 +69,5 @@ En los bloques de dos columnas `.evidence`, centrar siempre verticalmente el tex
 ## Enfoque de la página de inicio
 
 El inicio y «Sobre nuestro proyecto» presentan el aprendizaje semanal y los diferentes usos de la fabricación digital; no limitar la bitácora a las abejas. El proyecto final se presenta como una aplicación de esos conocimientos: idea inicial de un dosificador de miel para facilitar la manipulación y el envasado. No afirmar que la solución ya esté validada. Mantener estas descripciones y el cuaderno inicial del proyecto en español e inglés.
+
+Tono editorial: usar títulos y descripciones directos, descriptivos y técnicos. Evitar eslóganes poéticos y no introducir la página con «Somos un equipo de cuatro integrantes». El encabezado principal es «Fabricación digital / Digital fabrication».
