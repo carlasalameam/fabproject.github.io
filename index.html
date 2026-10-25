@@ -15,7 +15,7 @@ header{background:#102632;color:#edf5fa}.nav{gap:24px;min-height:100px}.brand{fl
 /* Portadas de asignaciones: añadir imágenes a medida que se documentan las semanas. */
 .week-cover{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--line);border-radius:4px;margin-top:17px;background:#f3f8fb}.week-grid{align-items:start}.week{width:100%}
 </style>
-<link rel="stylesheet" href="site-navigation.css?v=2"></head>
+<link rel="stylesheet" href="site-navigation.css?v=2"><style>.person-copy{padding:22px 18px}.person h3{font-size:21px;line-height:1.25;min-height:2.5em}.person-copy .person-role{color:var(--blue);font-size:11px;font-weight:600;margin-top:13px}.person-copy .person-study{font-size:12px;margin-top:8px;padding-bottom:17px;border-bottom:1px solid var(--line)}.person-tasks-title{font:600 11px system-ui,sans-serif;color:var(--ink);text-transform:uppercase;letter-spacing:1px;margin:18px 0 10px}.person-tasks{padding-left:17px;margin:0;color:var(--muted);font-size:12px;line-height:1.6}.person-tasks li+li{margin-top:7px}.portrait:has(img):before{display:none}.team-grid{align-items:stretch}@media(max-width:620px){.person-copy{padding:16px 12px}.person h3{font-size:19px}.person-tasks{font-size:11px}.person-copy .person-study{font-size:11px}.person-copy .person-role{font-size:10px}}@media(max-width:360px){.team-grid{grid-template-columns:1fr}.portrait{height:280px}.person h3{min-height:0}}</style></head>
 <body>
 <a class="skip" href="#main" data-t="skip">Saltar al contenido</a>
 <header><div class="wrap nav"><a class="brand" href="#home" aria-label="APIA"><svg viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M20 2 38 12.5v21L20 44 2 33.5v-21Z" stroke="currentColor"/><path d="M20 11 30 17v12L20 35 10 29V17Z" stroke="currentColor"/><path d="M20 11v24M10 17l20 12M30 17 10 29" stroke="currentColor" opacity=".4"/></svg><span><strong>APIA</strong><small data-t="brand">Fab Academy U Cuenca</small></span></a><div class="institutions" aria-label="Instituciones"><div class="institution"><img src="images/ucuenca.png" alt="Universidad de Cuenca" width="2677" height="1505" decoding="async"></div><div class="institution"><img src="images/ingenieria-industrial.jpg" alt="Ingeniería Industrial" width="200" height="200" decoding="async"></div><div class="institution"><img src="images/fablab-ucuenca.jpeg" alt="Industrial FabLab UCuenca" width="1472" height="832" decoding="async"></div></div><nav class="navlinks" aria-label="Principal"><a href="#home">Home</a><a href="#about">About</a><a href="#project">Final Project</a><a data-weeks-link href="#assignments">Semanas</a></nav><div class="tools"><div class="langs"><button class="tool active" id="es" lang="es" aria-label="Español" aria-pressed="true">ES</button><button class="tool" id="en" lang="en" aria-label="English" aria-pressed="false">EN</button></div><button class="tool" id="theme" aria-label="Activar tema oscuro" aria-pressed="false">◐</button></div></div></header>
@@ -31,21 +31,152 @@ header{background:#102632;color:#edf5fa}.nav{gap:24px;min-height:100px}.brand{fl
 // PERSONALIZA AQUÍ: nombres, biografías y rutas de fotos. Conserva las dos traducciones.
 // Foto grupal: escribe una ruta como images/equipo.jpg cuando tengas el archivo.
 const groupPhoto = "";
-const members = [1,2,3,4].map(n=>({name:{es:`Integrante ${n}`,en:`Team member ${n}`},bio:{es:'Aquí irá una breve presentación, sus intereses y su aporte al proyecto.',en:'A short introduction, interests and contribution to the project will go here.'},photo:''}));
+const members = [
+  {
+    "name": {
+      "es": "Carla Salamea Matovelle",
+      "en": "Carla Salamea Matovelle"
+    },
+    "role": {
+      "es": "Desarrollo e investigación",
+      "en": "Development and research"
+    },
+    "study": {
+      "es": "Estudiante de sexto ciclo de Ingeniería Industrial",
+      "en": "Sixth-semester Industrial Engineering student"
+    },
+    "tasks": {
+      "es": [
+        "Diseño y desarrollo de la página web",
+        "Diseño y fabricación digital",
+        "Generación y desarrollo de ideas",
+        "Toma de decisiones"
+      ],
+      "en": [
+        "Website design and development",
+        "Digital design and fabrication",
+        "Idea generation and development",
+        "Decision-making"
+      ]
+    },
+    "photo": "images/team/carla-salamea.jpeg",
+    "photoPosition": "50% 40%"
+  },
+  {
+    "name": {
+      "es": "Diego Minchalo Cabrera",
+      "en": "Diego Minchalo Cabrera"
+    },
+    "role": {
+      "es": "Desarrollo e investigación",
+      "en": "Development and research"
+    },
+    "study": {
+      "es": "Estudiante de sexto ciclo de Ingeniería Industrial",
+      "en": "Sixth-semester Industrial Engineering student"
+    },
+    "tasks": {
+      "es": [
+        "Responsable principal de fabricación digital",
+        "Manejo de máquinas",
+        "Elaboración de la documentación semanal",
+        "Registro fotográfico",
+        "Diseño y fabricación digital",
+        "Generación y desarrollo de ideas",
+        "Toma de decisiones"
+      ],
+      "en": [
+        "Primary responsibility for digital fabrication",
+        "Machine operation",
+        "Weekly documentation",
+        "Photographic documentation",
+        "Digital design and fabrication",
+        "Idea generation and development",
+        "Decision-making"
+      ]
+    },
+    "photo": "images/team/diego-minchalo.png",
+    "photoPosition": "50% 25%"
+  },
+  {
+    "name": {
+      "es": "Camila Aguirre Mendieta",
+      "en": "Camila Aguirre Mendieta"
+    },
+    "role": {
+      "es": "Desarrollo e investigación",
+      "en": "Development and research"
+    },
+    "study": {
+      "es": "Estudiante de sexto ciclo de Ingeniería Industrial",
+      "en": "Sixth-semester Industrial Engineering student"
+    },
+    "tasks": {
+      "es": [
+        "Diseño y control de máquinas",
+        "Elaboración de la documentación semanal",
+        "Registro fotográfico",
+        "Diseño y fabricación digital",
+        "Generación y desarrollo de ideas",
+        "Toma de decisiones"
+      ],
+      "en": [
+        "Machine design and control",
+        "Weekly documentation",
+        "Photographic documentation",
+        "Digital design and fabrication",
+        "Idea generation and development",
+        "Decision-making"
+      ]
+    },
+    "photo": "images/team/camila-aguirre.jpeg",
+    "photoPosition": "50% 35%"
+  },
+  {
+    "name": {
+      "es": "Steven Aucapiña Lozada",
+      "en": "Steven Aucapiña Lozada"
+    },
+    "role": {
+      "es": "Desarrollo e investigación",
+      "en": "Development and research"
+    },
+    "study": {
+      "es": "Estudiante de sexto ciclo de Ingeniería Industrial",
+      "en": "Sixth-semester Industrial Engineering student"
+    },
+    "tasks": {
+      "es": [
+        "Diseño gráfico",
+        "Diseño y fabricación digital",
+        "Generación y desarrollo de ideas",
+        "Toma de decisiones"
+      ],
+      "en": [
+        "Graphic design",
+        "Digital design and fabrication",
+        "Idea generation and development",
+        "Decision-making"
+      ]
+    },
+    "photo": "images/team/steven-aucapina.jpeg",
+    "photoPosition": "50% 25%"
+  }
+];
 // Calendario orientativo: ajustar con el laboratorio.
 const weeks = [
 ['Principios y prácticas','Principles and practices'],['Diseño digital y fabricación','Digital design and fabrication'],['Diseño asistido por computadora','Computer-aided design'],['Corte controlado por computadora','Computer-controlled cutting'],['Producción electrónica','Electronics production'],['Escaneo e impresión 3D','3D scanning and printing'],['Diseño electrónico','Electronics design'],['Mecanizado controlado por computadora','Computer-controlled machining'],['Programación embebida','Embedded programming'],['Moldeo y fundición','Molding and casting'],['Dispositivos de entrada','Input devices'],['Dispositivos de salida','Output devices'],['Redes y comunicaciones','Networking and communications'],['Diseño de máquinas','Machine design'],['Interfaces y aplicaciones','Interface and application programming'],['Semana de exploración','Wildcard week'],['Aplicaciones e implicaciones','Applications and implications'],['Invención y propiedad intelectual','Invention and intellectual property'],['Integración del proyecto','Project integration'],['Presentación y desarrollo final','Final presentation and development']];
 // Ejemplo para añadir contenido real: entries[1] = {es:[{title:'Objetivo',text:'Mi documentación…'}],en:[{title:'Objective',text:'My documentation…'}]};
 const entries = {};
 const copy = {
-es:{skip:'Saltar al contenido',brand:'Fab Academy U Cuenca',navAbout:'El origen',navTeam:'El equipo',navProject:'El proyecto',navWeeks:'Bitácora',heroLabel:'Una bitácora de fabricación digital',heroTitle:'Fabricación<br><em>digital.</em>',heroText:'Documentación semanal de herramientas, procesos y prácticas de diseño 2D y 3D, impresión, programación y electrónica. Registro de los conocimientos aplicados al desarrollo del proyecto final: un dosificador de miel.',discover:'Descubre el proyecto',explore:'Explorar la bitácora ↓',artLabel:'DISEÑO Y PROTOTIPADO',heroBottom:'Documentación semanal',heroBottomRight:'Diseño · Fabricación · Programación',aboutLabel:'01 / Introducción',aboutTitle:'Sobre nuestro proyecto',aboutText:'Esta página documenta las prácticas de fabricación digital realizadas durante el curso: organización de ideas, diseño 2D y 3D, preparación de archivos, impresión de piezas y desarrollo web. Cada semana reúne los procedimientos, las herramientas utilizadas y los resultados obtenidos.',aboutText2:'El proyecto final propone un dosificador de miel para facilitar la manipulación y el llenado de envases en pequeños emprendimientos apícolas. Las prácticas del curso permiten estudiar qué procesos de diseño, fabricación y control pueden aplicarse a esta propuesta.',pillar1:'Diseño y fabricación digital',pillar2:'Aprendizaje semanal',pillar3:'Aplicación al proyecto final',teamLabel:'02 / Integrantes',teamTitle:'Equipo de trabajo',teamText:'Conoce a los cuatro integrantes del grupo, sus intereses y sus responsabilidades en el proyecto.',projectLabel:'03 / Nuestro proyecto',projectTitle:'Proyecto final',projectStatus:'IDEA INICIAL',projectText:'Nuestra idea inicial es un dosificador de miel para pequeños emprendimientos apícolas. La viscosidad de la miel puede dificultar su manipulación y el llenado de envases; buscamos explorar una dosificación más controlada y reducir las pérdidas de producto. El diseño, la fabricación de piezas y el control electrónico son conocimientos que queremos integrar en esta propuesta, cuya utilidad deberá comprobarse mediante pruebas.',projectMore:'Abrir el cuaderno del proyecto ↗',visualCaption:'APICULTURA × FABRICACIÓN DIGITAL · ILUSTRACIÓN CONCEPTUAL',weeksLabel:'04 / Asignaciones',weeksTitle:'Asignaciones semanales',weeksText:'Nuestra bitácora de asignaciones: un espacio para guardar el proceso, los archivos y las lecciones de cada semana.',searchLabel:'Buscar asignación',calendarNote:'Calendario orientativo: ajustaremos los temas y el orden a las indicaciones de nuestro laboratorio. Las semanas 1 y 2 cuentan con documentación en español e inglés; las demás están pendientes.',closing:'Prácticas, archivos y resultados',closingText:'Documentación de las actividades realizadas durante el curso.',footer:'Fabricación digital & apicultura<br>Un proyecto en construcción · Nombre provisional',top:'Volver arriba ↑',pending:'Por documentar',groupCaption:'Fotografía del equipo · Aquí añadiremos una imagen de los cuatro integrantes.',photo:'Tu fotografía aquí',week:'SEMANA',search:'Buscar una asignación…',count:'asignaciones',noResults:'No hay asignaciones que coincidan con tu búsqueda.',close:'Cerrar',dark:'Activar tema oscuro',light:'Activar tema claro',art:'Ilustración de un panal azul y una abeja en vuelo',docTitle:'APIA · Fabricación digital',projectIntroSections:[{"title": "La necesidad", "text": "La viscosidad de la miel puede dificultar la manipulación y el llenado de envases en pequeños emprendimientos apícolas. La propuesta busca facilitar la dosificación y evaluar las pérdidas de producto durante el envasado."}, {"title": "La idea inicial", "text": "Exploramos un dosificador de miel que combine un mecanismo de dispensación y control de temperatura. El calentamiento debe estudiarse según el producto y el proceso: no se presenta como una solución ya validada ni como una forma de eliminar la cristalización natural de la miel."}, {"title": "Aplicación de lo aprendido", "text": "Los ejercicios semanales aportan herramientas para representar la idea mediante diseño 2D y 3D, fabricar modelos o piezas, documentar resultados y explorar la programación y la electrónica. Estas prácticas nos ayudan a relacionar conocimientos que pueden contribuir al desarrollo del proyecto final."}],projectSections:['El problema y su contexto','Nuestra propuesta','Diseño y fabricación','Pruebas y resultados','Archivos y próximos pasos'],weekSections:['Objetivo de la asignación','Proceso y herramientas','Pruebas y aprendizajes','Archivos y referencias'],placeholder:'Pendiente de completar. Aquí añadiremos nuestra documentación.',notStarted:'Esta entrada aún no tiene documentación. Los siguientes apartados están preparados para añadir el trabajo real del equipo.'},
-en:{skip:'Skip to content',brand:'Fab Academy U Cuenca',navAbout:'Our origin',navTeam:'The team',navProject:'The project',navWeeks:'Journal',heroLabel:'A digital fabrication journal',heroTitle:'Digital<br><em>fabrication.</em>',heroText:'Weekly documentation of tools, processes and exercises in 2D and 3D design, printing, programming and electronics. A record of the knowledge applied to the final project: a honey dispenser.',discover:'Discover the project',explore:'Explore the journal ↓',artLabel:'DESIGN AND PROTOTYPING',heroBottom:'Weekly documentation',heroBottomRight:'Design · Fabrication · Programming',aboutLabel:'01 / Introduction',aboutTitle:'About our project',aboutText:'This website documents the digital fabrication exercises carried out during the course: organizing ideas, 2D and 3D design, file preparation, part printing and web development. Each week records the procedures, tools used and results obtained.',aboutText2:'The final project proposes a honey dispenser to support handling and container filling in small beekeeping businesses. The course exercises help assess which design, fabrication and control processes can be applied to this proposal.',pillar1:'Digital design and fabrication',pillar2:'Weekly learning',pillar3:'Application to the final project',teamLabel:'02 / Team members',teamTitle:'Our team',teamText:'Meet our four team members, their interests and their responsibilities within the project.',projectLabel:'03 / Our project',projectTitle:'Final project',projectStatus:'INITIAL IDEA',projectText:'Our initial idea is a honey dispenser for small beekeeping businesses. Honey viscosity can make handling and container filling difficult; we aim to explore more controlled dispensing and reduce product losses. Design, part fabrication and electronic control are areas of knowledge we want to bring together in this proposal, whose usefulness will need to be assessed through testing.',projectMore:'Open the project notebook ↗',visualCaption:'BEEKEEPING × DIGITAL FABRICATION · CONCEPTUAL ILLUSTRATION',weeksLabel:'04 / Assignments',weeksTitle:'Weekly assignments',weeksText:'Our assignment journal: a place to keep the process, files and lessons from every week.',searchLabel:'Find an assignment',calendarNote:'Provisional schedule: topics and order will be adjusted to our lab’s guidance. Weeks 1 and 2 are documented in Spanish and English; the remaining entries are awaiting documentation.',closing:'Exercises, files and results',closingText:'Documentation of the activities carried out during the course.',footer:'Digital fabrication & beekeeping<br>A project in progress · Working name',top:'Back to top ↑',pending:'To be documented',groupCaption:'Team photograph · A picture of all four team members will go here.',photo:'Your photograph here',week:'WEEK',search:'Find an assignment…',count:'assignments',noResults:'No assignments match your search.',close:'Close',dark:'Switch to dark theme',light:'Switch to light theme',art:'Illustration of a blue honeycomb and a flying bee',docTitle:'APIA · Digital fabrication',projectIntroSections:[{"title": "The need", "text": "Honey viscosity can make handling and container filling difficult for small beekeeping businesses. The proposal aims to support dispensing and assess product losses during packaging."}, {"title": "The initial idea", "text": "We are exploring a honey dispenser that combines a dispensing mechanism and temperature control. Heating must be studied in relation to the product and process: it is not presented as an already validated solution or as a way to eliminate natural honey crystallization."}, {"title": "Applying what we learn", "text": "The weekly exercises provide tools to represent the idea through 2D and 3D design, make models or parts, document results and explore programming and electronics. These practices help us connect knowledge that may contribute to developing the final project."}],projectSections:['The problem and its context','Our proposal','Design and fabrication','Testing and results','Files and next steps'],weekSections:['Assignment objective','Process and tools','Testing and lessons learned','Files and references'],placeholder:'To be completed. We will add our documentation here.',notStarted:'This entry has no documentation yet. The sections below are ready for the team’s actual work.'}};
+es:{skip:'Saltar al contenido',brand:'Fab Academy U Cuenca',navAbout:'El origen',navTeam:'El equipo',navProject:'El proyecto',navWeeks:'Bitácora',heroLabel:'Una bitácora de fabricación digital',heroTitle:'Fabricación<br><em>digital.</em>',heroText:'Documentación semanal de herramientas, procesos y prácticas de diseño 2D y 3D, impresión, programación y electrónica. Registro de los conocimientos aplicados al desarrollo del proyecto final: un dosificador de miel.',discover:'Descubre el proyecto',explore:'Explorar la bitácora ↓',artLabel:'DISEÑO Y PROTOTIPADO',heroBottom:'Documentación semanal',heroBottomRight:'Diseño · Fabricación · Programación',aboutLabel:'01 / Introducción',aboutTitle:'Sobre nuestro proyecto',aboutText:'Esta página documenta las prácticas de fabricación digital realizadas durante el curso: organización de ideas, diseño 2D y 3D, preparación de archivos, impresión de piezas y desarrollo web. Cada semana reúne los procedimientos, las herramientas utilizadas y los resultados obtenidos.',aboutText2:'El proyecto final propone un dosificador de miel para facilitar la manipulación y el llenado de envases en pequeños emprendimientos apícolas. Las prácticas del curso permiten estudiar qué procesos de diseño, fabricación y control pueden aplicarse a esta propuesta.',pillar1:'Diseño y fabricación digital',pillar2:'Aprendizaje semanal',pillar3:'Aplicación al proyecto final',teamLabel:'02 / Integrantes',teamTitle:'Equipo de trabajo',teamText:'Funciones compartidas de desarrollo e investigación, con tareas específicas de documentación, diseño y fabricación.',projectLabel:'03 / Nuestro proyecto',projectTitle:'Proyecto final',projectStatus:'IDEA INICIAL',projectText:'Nuestra idea inicial es un dosificador de miel para pequeños emprendimientos apícolas. La viscosidad de la miel puede dificultar su manipulación y el llenado de envases; buscamos explorar una dosificación más controlada y reducir las pérdidas de producto. El diseño, la fabricación de piezas y el control electrónico son conocimientos que queremos integrar en esta propuesta, cuya utilidad deberá comprobarse mediante pruebas.',projectMore:'Abrir el cuaderno del proyecto ↗',visualCaption:'APICULTURA × FABRICACIÓN DIGITAL · ILUSTRACIÓN CONCEPTUAL',weeksLabel:'04 / Asignaciones',weeksTitle:'Asignaciones semanales',weeksText:'Nuestra bitácora de asignaciones: un espacio para guardar el proceso, los archivos y las lecciones de cada semana.',searchLabel:'Buscar asignación',calendarNote:'Calendario orientativo: ajustaremos los temas y el orden a las indicaciones de nuestro laboratorio. Las semanas 1 y 2 cuentan con documentación en español e inglés; las demás están pendientes.',closing:'Prácticas, archivos y resultados',closingText:'Documentación de las actividades realizadas durante el curso.',footer:'Fabricación digital & apicultura<br>Un proyecto en construcción · Nombre provisional',top:'Volver arriba ↑',pending:'Por documentar',groupCaption:'Fotografía del equipo · Aquí añadiremos una imagen de los cuatro integrantes.',photo:'Tu fotografía aquí',week:'SEMANA',search:'Buscar una asignación…',count:'asignaciones',noResults:'No hay asignaciones que coincidan con tu búsqueda.',close:'Cerrar',dark:'Activar tema oscuro',light:'Activar tema claro',art:'Ilustración de un panal azul y una abeja en vuelo',docTitle:'APIA · Fabricación digital',projectIntroSections:[{"title": "La necesidad", "text": "La viscosidad de la miel puede dificultar la manipulación y el llenado de envases en pequeños emprendimientos apícolas. La propuesta busca facilitar la dosificación y evaluar las pérdidas de producto durante el envasado."}, {"title": "La idea inicial", "text": "Exploramos un dosificador de miel que combine un mecanismo de dispensación y control de temperatura. El calentamiento debe estudiarse según el producto y el proceso: no se presenta como una solución ya validada ni como una forma de eliminar la cristalización natural de la miel."}, {"title": "Aplicación de lo aprendido", "text": "Los ejercicios semanales aportan herramientas para representar la idea mediante diseño 2D y 3D, fabricar modelos o piezas, documentar resultados y explorar la programación y la electrónica. Estas prácticas nos ayudan a relacionar conocimientos que pueden contribuir al desarrollo del proyecto final."}],projectSections:['El problema y su contexto','Nuestra propuesta','Diseño y fabricación','Pruebas y resultados','Archivos y próximos pasos'],weekSections:['Objetivo de la asignación','Proceso y herramientas','Pruebas y aprendizajes','Archivos y referencias'],placeholder:'Pendiente de completar. Aquí añadiremos nuestra documentación.',notStarted:'Esta entrada aún no tiene documentación. Los siguientes apartados están preparados para añadir el trabajo real del equipo.'},
+en:{skip:'Skip to content',brand:'Fab Academy U Cuenca',navAbout:'Our origin',navTeam:'The team',navProject:'The project',navWeeks:'Journal',heroLabel:'A digital fabrication journal',heroTitle:'Digital<br><em>fabrication.</em>',heroText:'Weekly documentation of tools, processes and exercises in 2D and 3D design, printing, programming and electronics. A record of the knowledge applied to the final project: a honey dispenser.',discover:'Discover the project',explore:'Explore the journal ↓',artLabel:'DESIGN AND PROTOTYPING',heroBottom:'Weekly documentation',heroBottomRight:'Design · Fabrication · Programming',aboutLabel:'01 / Introduction',aboutTitle:'About our project',aboutText:'This website documents the digital fabrication exercises carried out during the course: organizing ideas, 2D and 3D design, file preparation, part printing and web development. Each week records the procedures, tools used and results obtained.',aboutText2:'The final project proposes a honey dispenser to support handling and container filling in small beekeeping businesses. The course exercises help assess which design, fabrication and control processes can be applied to this proposal.',pillar1:'Digital design and fabrication',pillar2:'Weekly learning',pillar3:'Application to the final project',teamLabel:'02 / Team members',teamTitle:'Our team',teamText:'Shared development and research responsibilities, with specific tasks in documentation, design and fabrication.',projectLabel:'03 / Our project',projectTitle:'Final project',projectStatus:'INITIAL IDEA',projectText:'Our initial idea is a honey dispenser for small beekeeping businesses. Honey viscosity can make handling and container filling difficult; we aim to explore more controlled dispensing and reduce product losses. Design, part fabrication and electronic control are areas of knowledge we want to bring together in this proposal, whose usefulness will need to be assessed through testing.',projectMore:'Open the project notebook ↗',visualCaption:'BEEKEEPING × DIGITAL FABRICATION · CONCEPTUAL ILLUSTRATION',weeksLabel:'04 / Assignments',weeksTitle:'Weekly assignments',weeksText:'Our assignment journal: a place to keep the process, files and lessons from every week.',searchLabel:'Find an assignment',calendarNote:'Provisional schedule: topics and order will be adjusted to our lab’s guidance. Weeks 1 and 2 are documented in Spanish and English; the remaining entries are awaiting documentation.',closing:'Exercises, files and results',closingText:'Documentation of the activities carried out during the course.',footer:'Digital fabrication & beekeeping<br>A project in progress · Working name',top:'Back to top ↑',pending:'To be documented',groupCaption:'Team photograph · A picture of all four team members will go here.',photo:'Your photograph here',week:'WEEK',search:'Find an assignment…',count:'assignments',noResults:'No assignments match your search.',close:'Close',dark:'Switch to dark theme',light:'Switch to light theme',art:'Illustration of a blue honeycomb and a flying bee',docTitle:'APIA · Digital fabrication',projectIntroSections:[{"title": "The need", "text": "Honey viscosity can make handling and container filling difficult for small beekeeping businesses. The proposal aims to support dispensing and assess product losses during packaging."}, {"title": "The initial idea", "text": "We are exploring a honey dispenser that combines a dispensing mechanism and temperature control. Heating must be studied in relation to the product and process: it is not presented as an already validated solution or as a way to eliminate natural honey crystallization."}, {"title": "Applying what we learn", "text": "The weekly exercises provide tools to represent the idea through 2D and 3D design, make models or parts, document results and explore programming and electronics. These practices help us connect knowledge that may contribute to developing the final project."}],projectSections:['The problem and its context','Our proposal','Design and fabrication','Testing and results','Files and next steps'],weekSections:['Assignment objective','Process and tools','Testing and lessons learned','Files and references'],placeholder:'To be completed. We will add our documentation here.',notStarted:'This entry has no documentation yet. The sections below are ready for the team’s actual work.'}};
 const $=s=>document.querySelector(s);let lang='es',theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light',opened=null;
 try{lang=localStorage.getItem('apia-language')==='en'?'en':'es';const saved=localStorage.getItem('apia-theme');if(['light','dark'].includes(saved))theme=saved}catch{}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function save(k,v){try{localStorage.setItem(k,v)}catch{}}
-function renderTeam(){const t=copy[lang];$('#groupPhoto').classList.toggle('has-photo',Boolean(groupPhoto));$('#groupPhoto').innerHTML=(groupPhoto?`<img src="${esc(groupPhoto)}" alt="${lang==='es'?'Equipo de trabajo':'Our team'}">`:`<svg viewBox="0 0 100 75" fill="none" aria-hidden="true"><circle cx="50" cy="20" r="11" stroke="currentColor"/><circle cx="20" cy="27" r="9" stroke="currentColor"/><circle cx="80" cy="27" r="9" stroke="currentColor"/><path d="M30 69V54a20 20 0 0 1 40 0v15M3 69V55a17 17 0 0 1 24-15m70 29V55a17 17 0 0 0-24-15" stroke="currentColor"/></svg>`)+`<figcaption>${t.groupCaption}</figcaption>`;$('#teamGrid').innerHTML=members.map((m,i)=>`<article class="person"><div class="portrait">${m.photo?`<img src="${esc(m.photo)}" alt="${esc(m.name[lang])}" loading="lazy">`:`<svg viewBox="0 0 100 120" fill="none" aria-hidden="true"><circle cx="50" cy="35" r="20" stroke="currentColor"/><path d="M12 110V95a38 38 0 0 1 76 0v15" stroke="currentColor"/></svg><span class="photo-label">${t.photo}</span>`}</div><div class="person-copy"><span class="person-num">0${i+1} / APIA</span><h3>${esc(m.name[lang])}</h3><p>${esc(m.bio[lang])}</p></div></article>`).join('')}
+function renderTeam(){const t=copy[lang];$('#groupPhoto').classList.toggle('has-photo',Boolean(groupPhoto));$('#groupPhoto').innerHTML=(groupPhoto?`<img src="${esc(groupPhoto)}" alt="${lang==='es'?'Equipo de trabajo':'Our team'}">`:`<svg viewBox="0 0 100 75" fill="none" aria-hidden="true"><circle cx="50" cy="20" r="11" stroke="currentColor"/><circle cx="20" cy="27" r="9" stroke="currentColor"/><circle cx="80" cy="27" r="9" stroke="currentColor"/><path d="M30 69V54a20 20 0 0 1 40 0v15M3 69V55a17 17 0 0 1 24-15m70 29V55a17 17 0 0 0-24-15" stroke="currentColor"/></svg>`)+`<figcaption>${t.groupCaption}</figcaption>`;$('#teamGrid').innerHTML=members.map((m,i)=>`<article class="person"><div class="portrait">${m.photo?`<img src="${esc(m.photo)}" alt="${esc(m.name[lang])}" style="object-position:${esc(m.photoPosition)}" loading="lazy" decoding="async">`:`<svg viewBox="0 0 100 120" fill="none" aria-hidden="true"><circle cx="50" cy="35" r="20" stroke="currentColor"/><path d="M12 110V95a38 38 0 0 1 76 0v15" stroke="currentColor"/></svg><span class="photo-label">${t.photo}</span>`}</div><div class="person-copy"><span class="person-num">0${i+1} / APIA</span><h3>${esc(m.name[lang])}</h3><p class="person-role">${esc(m.role[lang])}</p><p class="person-study">${esc(m.study[lang])}</p><h4 class="person-tasks-title">${lang==='es'?'Tareas':'Tasks'}</h4><ul class="person-tasks">${m.tasks[lang].map(task=>`<li>${esc(task)}</li>`).join('')}</ul></div></article>`).join('')}
 function renderWeeks(){const t=copy[lang],q=norm($('#search').value);let count=0;$('#weekGrid').innerHTML=weeks.map((w,i)=>{if(!norm(`${i+1} ${w[lang==='es'?0:1]}`).includes(q))return '';count++;return `<button class="week" data-week="${i+1}" ${i<2?'':'aria-haspopup="dialog"'}><span class="week-top"><span>${t.week} ${String(i+1).padStart(2,'0')}</span><span class="arrow" aria-hidden="true">↗</span></span>${i===1?`<img class="week-cover" src="images/week-02/cover.png" alt="${lang==='es'?'Ilustración conceptual de la semana 2: lluvia de ideas, diseño CAD, impresión 3D de llaveros y documentación web':'Week 2 conceptual illustration: brainstorming, CAD design, 3D-printed keychains and web documentation'}" width="1536" height="1024" loading="lazy">`:''}${i===0?`<img class="week-cover" src="images/week-01/cover.png" alt="${lang==='es'?'Ilustración conceptual: herramientas de desarrollo web, diseño del producto y dosificador de miel':'Conceptual illustration: web development tools, product design and honey dispenser'}" width="1536" height="1024" loading="lazy" decoding="async">`:''}<h3>${esc(w[lang==='es'?0:1])}</h3><span class="week-status">${i<2?(lang==='es'?'Documentación disponible':'Documentation available'):t.pending}</span></button>`}).join('');if(!count)$('#weekGrid').innerHTML=`<p class="empty">${t.noResults}</p>`;$('#weekCount').textContent=`${count} / ${weeks.length} ${t.count}`}
 function renderTheme(){document.documentElement.dataset.theme=theme;$('#theme').setAttribute('aria-label',copy[lang][theme==='dark'?'light':'dark']);$('#theme').setAttribute('aria-pressed',String(theme==='dark'))}
 function render(){document.documentElement.lang=lang;document.title=copy[lang].docTitle;document.querySelectorAll('[data-t]').forEach(el=>el.innerHTML=copy[lang][el.dataset.t]);['es','en'].forEach(l=>{$('#'+l).classList.toggle('active',lang===l);$('#'+l).setAttribute('aria-pressed',String(lang===l))});$('nav').setAttribute('aria-label',lang==='es'?'Principal':'Main');$('#heroArt').setAttribute('aria-label',copy[lang].art);$('#search').placeholder=copy[lang].search;$('#closeDialog').setAttribute('aria-label',copy[lang].close);renderTeam();renderWeeks();renderTheme();if($('#entry').open)fillEntry()}

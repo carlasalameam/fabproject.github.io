@@ -71,3 +71,7 @@ En los bloques de dos columnas `.evidence`, centrar siempre verticalmente el tex
 El inicio y «Sobre nuestro proyecto» presentan el aprendizaje semanal y los diferentes usos de la fabricación digital; no limitar la bitácora a las abejas. El proyecto final se presenta como una aplicación de esos conocimientos: idea inicial de un dosificador de miel para facilitar la manipulación y el envasado. No afirmar que la solución ya esté validada. Mantener estas descripciones y el cuaderno inicial del proyecto en español e inglés.
 
 Tono editorial: usar títulos y descripciones directos, descriptivos y técnicos. Evitar eslóganes poéticos y no introducir la página con «Somos un equipo de cuatro integrantes». El encabezado principal es «Fabricación digital / Digital fabrication».
+
+## Integrantes
+
+Las fotos y nombres de `EQUIPO.zip` están publicados en el orden Carla Salamea Matovelle, Diego Minchalo Cabrera, Camila Aguirre Mendieta y Steven Aucapiña Lozada. Todos comparten el rol «Desarrollo e investigación» y la descripción «Estudiante de sexto ciclo de Ingeniería Industrial». Las tareas en `members` incluyen diseño/fabricación digital, generación de ideas y toma de decisiones para todos, más las tareas específicas indicadas por el equipo. Mantener ES/EN y este orden. Las imágenes originales están en `images/team/` sin modificaciones; el encuadre se controla con CSS. La foto grupal sigue pendiente.
