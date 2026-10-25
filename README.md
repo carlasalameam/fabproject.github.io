@@ -57,3 +57,7 @@ Por indicación del equipo, los descargables y enlaces a pruebas online van siem
 La semana 2 incluye dos grupos claramente separados al final: software 2D/3D y enlaces online primero; diseños y G-code de impresión después. Hay accesos directos a ambos grupos desde el inicio de la página. Actualizar la versión en las URLs de `week-02-content.js` y `week-02.js` al publicar cambios para evitar que se usen copias antiguas del contenido desde la caché. La imagen completa de referencia de la impresora fue recibida en `MAQUINA 3D.zip` y se guarda sin modificar en `images/week-02/impresora-flsun.png`. Se muestra junto a los ocho pasos en español e inglés; las cuatro fotos originales de impresión permanecen en la galería de resultados.
 
 El apartado 3.1 de la semana 2 incluye cuatro capturas originales recibidas en `DISEÑO Y MODELADO.zip`: boceto y modelo 3D de la abeja, y boceto y modelo 3D del casco espartano. Se conservan sin editar en los archivos `images/week-02/fusion-*.png`, con pies y textos alternativos ES/EN.
+
+## Navegación de semanas
+
+`site-navigation.js` comparte el enlace «Semanas / Weeks» del menú y los botones de semana anterior/siguiente. Añadir una semana a `publishedWeeks` solamente cuando exista su página publicada. En los extremos se muestra un control inactivo; no se enlaza a semanas sin contenido. Cada página semanal incluye `.week-pagination` con `data-week` y carga `site-navigation.css` y `site-navigation.js` después de su propio selector de idioma. La navegación respeta la elección ES/EN y el tema.
