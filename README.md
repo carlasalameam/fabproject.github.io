@@ -61,3 +61,7 @@ El apartado 3.1 de la semana 2 incluye cuatro capturas originales recibidas en `
 ## Navegación de semanas
 
 `site-navigation.js` comparte el enlace «Semanas / Weeks» del menú y los botones de semana anterior/siguiente. Añadir una semana a `publishedWeeks` solamente cuando exista su página publicada. En los extremos se muestra un control inactivo; no se enlaza a semanas sin contenido. Cada página semanal incluye `.week-pagination` con `data-week` y carga `site-navigation.css` y `site-navigation.js` después de su propio selector de idioma. La navegación respeta la elección ES/EN y el tema.
+
+## Alineación de textos e imágenes
+
+En los bloques de dos columnas `.evidence`, centrar siempre verticalmente el texto y la galería entre sí: el contenido más corto queda centrado respecto al más largo. Los párrafos conservan la alineación izquierda para lectura. Este criterio compartido está en `site-navigation.css` y se aplica a ambas semanas y a las futuras páginas que carguen ese archivo. La imagen de la impresora no es fija al desplazarse para mantener esa misma alineación. En celular se conserva el orden apilado.

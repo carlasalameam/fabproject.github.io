@@ -9,3 +9,9 @@
 .navlinks{gap:16px}
 @media(max-width:1150px){.nav{flex-wrap:wrap;gap:14px;padding:16px 0}.institutions{order:2;flex:0 0 100%;gap:24px}.navlinks{margin-left:auto}.tools{order:1}}
 @media(max-width:620px){.navlinks{order:3;justify-content:center;width:100%;gap:16px;margin:0}.tools{order:0}.week-document .week-pagination{grid-template-columns:1fr 1fr;gap:12px}.week-pagination .week-nav-all{grid-column:1/-1;grid-row:2}.week-pagination strong{font-size:20px}.week-pagination .week-nav-link,.week-pagination .week-nav-disabled{padding:13px}}
+
+/* Shared weekly layout: balance the shorter column against the taller one. */
+.week-document .evidence{align-items:center}
+.week-document .evidence>div,.week-document .evidence>aside{align-self:center;min-width:0}
+.week-document .evidence>.gallery{padding-top:0}
+.week-document .evidence>.printer-photo{position:static;top:auto}
