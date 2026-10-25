@@ -194,6 +194,24 @@ Object.assign(weekTranslations, {
   "Conclusión": "Conclusion"
 });
 
+Object.assign(weekTranslations, {
+  "Aportes del equipo · Semana 1": "Team contributions · Week 1",
+  "Actividades compartidas": "Shared activities",
+  "Carla, Diego, Camila y Steven participaron en las siguientes actividades:": "Carla, Diego, Camila and Steven took part in the following activities:",
+  "Instalación y configuración de las herramientas de trabajo, incluida la extensión Live Server.": "Installation and configuration of working tools, including the Live Server extension.",
+  "Exploración de Kaggle y búsqueda de conjuntos de datos para las pruebas.": "Exploring Kaggle and searching for datasets for the exercises.",
+  "Uso de GitHub y del repositorio de documentación.": "Using GitHub and the documentation repository.",
+  "Elaboración individual de una página web de prueba.": "Developing an individual test website.",
+  "Planteamiento de enfoques y propuestas para el proyecto.": "Developing approaches and proposals for the project.",
+  "Investigación de los fundamentos y metodologías trabajados en la semana.": "Researching the foundations and methods covered during the week.",
+  "Aportes específicos": "Specific contributions",
+  "Integrantes": "Team members",
+  "Actividad": "Activity",
+  "Carla y Camila": "Carla and Camila",
+  "Redacción, organización y revisión de la documentación de la semana 1.": "Writing, organizing and reviewing the week 1 documentation.",
+  "Integración del uso de Codex con GitHub para desarrollar y actualizar la página web.": "Integrating Codex with GitHub to develop and update the website.",
+  "Aportes": "Contributions"
+});
 const attributeTranslations = {
   "Figura 1. Carpeta PROJECT creada en Documentos para organizar los archivos de trabajo. Fuente: captura de pantalla incluida por el equipo.": "Figure 1. PROJECT folder created in Documents to organize working files. Source: screenshot supplied by the team.",
   "Figura 2. Extensión Live Server en Visual Studio Code, utilizada para la vista previa local del sitio. Fuente: captura incluida por el equipo.": "Figure 2. Live Server extension in Visual Studio Code, used for local website previews. Source: screenshot supplied by the team.",
