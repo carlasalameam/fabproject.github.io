@@ -87,3 +87,9 @@ El equipo aprobó el borrador con la limitación bibliográfica indicada: solo s
 ## Aportes por semana
 
 Cada semana documenta sus aportes reales en una sección «Aportes del equipo», antes de la conclusión, separando actividades compartidas de tareas específicas. Los aportes de la semana 1 provienen de la indicación explícita del equipo: participación común de todos en herramientas, Kaggle, GitHub, página individual, enfoques del proyecto e investigación; Carla y Camila redactaron y organizaron la semana 1; Carla integró el uso de Codex con GitHub. No extrapolar estas atribuciones a otras semanas ni rellenarlas con los roles generales. Mantener ES/EN.
+
+La semana 2 tiene sus aportes confirmados por el equipo: Steven redactó la documentación; todos participaron en ideas y priorización; AutoCAD/Diego, LibreCAD/Carla, QCAD/Camila y Fusion/Tinkercad/SketchUp/Steven. Carla y Steven diseñaron e imprimieron la abeja; Diego y Camila, el casco. Carla preparó la impresora y elaboró la web. El equipo atribuyó la impresión con voladizos a Diego, Camila y Steven; esa atribución no añade parámetros, fotografías ni resultados técnicos de dicha práctica. No extrapolar estos aportes a la semana 3.
+
+La semana 3 documenta las atribuciones confirmadas por el equipo: Carla redactó la semana, preparó el escáner y explicó/utilizó CR Studio; Camila fue la persona escaneada y preparó el modelo para fabricación; Steven y Diego asistieron en el giro durante la captura; todos revisaron, mejoraron y repitieron las capturas. Estas atribuciones se refieren a las actividades documentadas, no a una impresión en resina ya realizada.
+
+Los apartados de aportes semanales se presentan de forma resumida en una tabla de actividad y participantes. Usar nombres cortos y «Todos» para actividades compartidas, conservar las atribuciones confirmadas y traducir al inglés. Esta preferencia afecta a los aportes, no al desarrollo técnico de cada semana.

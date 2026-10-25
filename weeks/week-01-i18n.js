@@ -212,6 +212,7 @@ Object.assign(weekTranslations, {
   "Integración del uso de Codex con GitHub para desarrollar y actualizar la página web.": "Integrating Codex with GitHub to develop and update the website.",
   "Aportes": "Contributions"
 });
+Object.assign(weekTranslations, {"Todos": "All members", "Participantes": "Contributors", "Documentación de la semana": "Weekly documentation", "Carla y Camila": "Carla and Camila", "Instalación de programas y Live Server": "Software and Live Server setup", "Búsqueda de datos en Kaggle": "Dataset search on Kaggle", "GitHub y repositorio": "GitHub and repository", "Página de prueba individual": "Individual test website", "Codex con GitHub": "Codex with GitHub", "Investigación y propuestas del proyecto": "Research and project proposals"});
 const attributeTranslations = {
   "Figura 1. Carpeta PROJECT creada en Documentos para organizar los archivos de trabajo. Fuente: captura de pantalla incluida por el equipo.": "Figure 1. PROJECT folder created in Documents to organize working files. Source: screenshot supplied by the team.",
   "Figura 2. Extensión Live Server en Visual Studio Code, utilizada para la vista previa local del sitio. Fuente: captura incluida por el equipo.": "Figure 2. Live Server extension in Visual Studio Code, used for local website previews. Source: screenshot supplied by the team.",
