@@ -65,3 +65,7 @@ El apartado 3.1 de la semana 2 incluye cuatro capturas originales recibidas en `
 ## Alineación de textos e imágenes
 
 En los bloques de dos columnas `.evidence`, centrar siempre verticalmente el texto y la galería entre sí: el contenido más corto queda centrado respecto al más largo. Los párrafos conservan la alineación izquierda para lectura. Este criterio compartido está en `site-navigation.css` y se aplica a ambas semanas y a las futuras páginas que carguen ese archivo. La imagen de la impresora no es fija al desplazarse para mantener esa misma alineación. En celular se conserva el orden apilado.
+
+## Enfoque de la página de inicio
+
+El inicio y «Sobre nuestro proyecto» presentan el aprendizaje semanal y los diferentes usos de la fabricación digital; no limitar la bitácora a las abejas. El proyecto final se presenta como una aplicación de esos conocimientos: idea inicial de un dosificador de miel para facilitar la manipulación y el envasado. No afirmar que la solución ya esté validada. Mantener estas descripciones y el cuaderno inicial del proyecto en español e inglés.
