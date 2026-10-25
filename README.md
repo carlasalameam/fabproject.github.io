@@ -75,3 +75,5 @@ Tono editorial: usar títulos y descripciones directos, descriptivos y técnicos
 ## Integrantes
 
 Las fotos y nombres de `EQUIPO.zip` están publicados en el orden Carla Salamea Matovelle, Diego Minchalo Cabrera, Camila Aguirre Mendieta y Steven Aucapiña Lozada. Todos comparten el rol «Desarrollo e investigación» y la descripción «Estudiante de sexto ciclo de Ingeniería Industrial». Las tareas en `members` incluyen diseño/fabricación digital, generación de ideas y toma de decisiones para todos, más las tareas específicas indicadas por el equipo. Mantener ES/EN y este orden. Las imágenes originales están en `images/team/` sin modificaciones; el encuadre se controla con CSS. La foto grupal sigue pendiente.
+
+Los cuatro perfiles deben mantener seis tareas cada uno en ambos idiomas. Carla y Steven también incluyen documentación semanal y registro fotográfico. La responsabilidad principal de Diego se expresa dentro de la tarea de diseño/fabricación digital para evitar duplicarla.
