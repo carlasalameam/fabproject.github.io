@@ -3,7 +3,8 @@
   const publishedWeeks = [
     { number: 1, file: 'week-01.html' },
     { number: 2, file: 'week-02.html' },
-    { number: 3, file: 'week-03.html' }
+    { number: 3, file: 'week-03.html' },
+    { number: 4, file: 'week-04.html' }
   ];
   const labels = {
     es: { weeks: 'Semanas', all: 'Todas las semanas', previous: 'Semana anterior', next: 'Semana siguiente', soon: 'Próximamente', navigation: 'Navegación entre semanas', week: 'Semana' },
