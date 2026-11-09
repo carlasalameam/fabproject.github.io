@@ -287,6 +287,13 @@ Object.assign(weekTranslations, {
   "Evidencias y código": "Evidence and code"
 });
 
+Object.assign(weekTranslations, {
+  "Dificultad al definir el proyecto": "Difficulty defining the project",
+  "Lo más difícil fue definir el alcance: buscábamos una propuesta más elaborada que los ejercicios iniciales, pero viable de desarrollar y comprobar con los recursos del curso. La planificación exigió relacionar las ideas con una necesidad concreta y equilibrar la complejidad del sistema con su utilidad.": "The hardest part was defining the scope: we wanted a proposal more developed than the initial exercises, yet feasible to build and test with the course resources. Planning required connecting ideas to a specific need and balancing system complexity with usefulness.",
+  "Aprendizaje de la selección": "Lesson from the selection",
+  "Aprendimos que una propuesta no debe elegirse solo por su tamaño o complejidad. También debe considerar su utilidad social, el uso de materiales y los residuos, y los costos y posibilidades de continuidad económica. Estos criterios orientaron la elección del dosificador de miel; su desempeño y rentabilidad deberán evaluarse durante el desarrollo.": "We learned that a proposal should not be chosen only for its size or complexity. It should also consider social usefulness, material use and waste, and costs and prospects for economic continuity. These criteria guided the honey dispenser selection; its performance and financial viability must be assessed during development."
+});
+
 const attributeTranslations = {
   "Figura 1. Carpeta PROJECT creada en Documentos para organizar los archivos de trabajo. Fuente: captura de pantalla incluida por el equipo.": "Figure 1. PROJECT folder created in Documents to organize working files. Source: screenshot supplied by the team.",
   "Figura 2. Extensión Live Server en Visual Studio Code, utilizada para la vista previa local del sitio. Fuente: captura incluida por el equipo.": "Figure 2. Live Server extension in Visual Studio Code, used for local website previews. Source: screenshot supplied by the team.",
