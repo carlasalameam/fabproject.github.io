@@ -26,7 +26,7 @@ La versión inicial usa ilustraciones SVG propias y marcadores para las fotograf
 
 ## Foto grupal e instituciones
 
-En `index.html`, edita `const groupPhoto = ""` y escribe la ruta de la foto de los cuatro integrantes, por ejemplo `images/equipo.jpg`. Añade ese archivo al repositorio. Las fichas individuales siguen configurándose en `members`.
+La foto grupal original está publicada en `images/team/equipo-de-trabajo.jpeg` y asignada en `const groupPhoto` de `index.html`. Se muestra completa y centrada, sin recortes, con texto alternativo y pie en español e inglés. Las fichas individuales siguen configurándose en `members`.
 
 La franja institucional usa los tres logos proporcionados por el equipo, guardados en `images/`. Se conservan los archivos originales, sus colores y proporciones. Los logos se integran en la misma barra azul de APIA y el menú, sin tarjetas ni franja adicional. Una presentación monocromática mediante CSS permite leerlos sobre azul; los archivos originales permanecen intactos.
 
@@ -66,7 +66,7 @@ Tono editorial: usar títulos y descripciones directos, descriptivos y técnicos
 
 ## Integrantes
 
-Las fotos y nombres de `EQUIPO.zip` están publicados en el orden Carla Salamea Matovelle, Diego Minchalo Cabrera, Camila Aguirre Mendieta y Steven Aucapiña Lozada. Todos comparten el rol «Desarrollo e investigación» y la descripción «Estudiante de sexto ciclo de Ingeniería Industrial». Las tareas en `members` incluyen diseño/fabricación digital, generación de ideas y toma de decisiones para todos, más las tareas específicas indicadas por el equipo. Mantener ES/EN y este orden. Las imágenes originales están en `images/team/` sin modificaciones; el encuadre se controla con CSS. La foto grupal sigue pendiente.
+Las fotos y nombres de `EQUIPO.zip` están publicados en el orden Carla Salamea Matovelle, Diego Minchalo Cabrera, Camila Aguirre Mendieta y Steven Aucapiña Lozada. Todos comparten el rol «Desarrollo e investigación» y la descripción «Estudiante de sexto ciclo de Ingeniería Industrial». Las tareas en `members` incluyen diseño/fabricación digital, generación de ideas y toma de decisiones para todos, más las tareas específicas indicadas por el equipo. Mantener ES/EN y este orden. Las imágenes originales están en `images/team/` sin modificaciones; el encuadre se controla con CSS. La foto grupal se muestra antes de las fichas individuales en la sección del equipo.
 
 Los cuatro perfiles deben mantener seis tareas cada uno en ambos idiomas. Carla y Steven también incluyen documentación semanal y registro fotográfico. La responsabilidad principal de Diego se expresa dentro de la tarea de diseño/fabricación digital para evitar duplicarla.
 
