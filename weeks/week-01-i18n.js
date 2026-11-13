@@ -368,3 +368,5 @@ Object.assign(attributeTranslations, {
   "Figura 13. Distribución de asignaciones, buscador y portada de la semana 1. Fuente: captura del sitio APIA durante la preparación de esta documentación.": "Figure 13. Assignment grid, search field and week 1 cover. Source: screenshot of the APIA website captured while preparing this documentation.",
   "Figura 14. Inicio del sitio con el tema oscuro activado. Fuente: captura del sitio APIA durante la preparación de esta documentación.": "Figure 14. Website homepage with dark theme enabled. Source: screenshot of the APIA website captured while preparing this documentation."
 });
+
+Object.assign(weekTranslations, {"Aportes del equipo": "Team contributions", "Integrantes": "Contributors", "Todos: Carla, Diego, Camila y Steven.": "All members: Carla, Diego, Camila and Steven."});
