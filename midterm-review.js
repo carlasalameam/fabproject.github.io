@@ -9,6 +9,10 @@
     en: image.dataset.altEn
   }));
   const themeButton = document.getElementById('theme');
+  const imageLinks = document.querySelectorAll('.midterm-gallery a, .midterm-cover-link');
+  const imageDialog = document.querySelector('.midterm-image-dialog');
+  const enlargedImage = imageDialog.querySelector('img');
+  const originalLink = imageDialog.querySelector('.midterm-image-original');
 
   function readPreference(key) {
     try { return localStorage.getItem(key); } catch { return null; }
@@ -26,6 +30,12 @@
     for (const entry of translatedImages) {
       entry.image.alt = entry[language];
     }
+    const enlarge = language === 'en' ? 'Enlarge image' : 'Ampliar imagen';
+    for (const link of imageLinks) {
+      link.title = enlarge;
+      link.setAttribute('aria-label', `${enlarge}: ${link.querySelector('img').alt}`);
+    }
+    imageDialog.setAttribute('aria-label', language === 'en' ? imageDialog.dataset.labelEn : 'Imagen ampliada');
     for (const button of languageButtons) {
       const active = button.id === language;
       button.classList.toggle('active', active);
@@ -56,6 +66,17 @@
     savePreference('apia-theme', theme);
     renderTheme(theme);
   });
+
+  for (const link of imageLinks) {
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !imageDialog.showModal) return;
+      event.preventDefault();
+      enlargedImage.alt = link.querySelector('img').alt;
+      enlargedImage.src = link.href;
+      originalLink.href = link.href;
+      imageDialog.showModal();
+    });
+  }
 
   renderLanguage(readPreference('apia-language') === 'en' ? 'en' : 'es');
   renderTheme(readPreference('apia-theme') === 'dark' ? 'dark' : 'light');

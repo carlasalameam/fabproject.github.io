@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MIDTERM REVIEW · APIA</title>
-  <link rel="stylesheet" href="midterm-review.css?v=3">
+  <link rel="stylesheet" href="midterm-review.css?v=4">
   <link rel="stylesheet" href="site-navigation.css?v=3">
-  <script src="midterm-review.js" defer></script>
+  <script src="midterm-review.js?v=2" defer></script>
   <script src="site-navigation.js?v=5" defer></script>
 </head>
 <body>
@@ -19,9 +19,11 @@
       <p class="midterm-subtitle"><span data-language="es">Mesa de póker desmontable</span><span data-language="en" hidden>Knock-down poker table</span></p>
     </div>
 
-    <img class="midterm-cover" src="images/midterm-review/portada.png" width="679" height="376"
+    <a class="midterm-cover-link" href="images/midterm-review/portada.png">
+      <img class="midterm-cover" src="images/midterm-review/portada.png" width="679" height="376"
          alt="Ilustración de la mesa de póker desmontable, con cuatro zonas de juego y un esquema de las piezas separadas."
          data-alt-en="Illustration of the knock-down poker table with four player areas and a diagram of its separate parts.">
+    </a>
 
     <section class="midterm-brief" aria-labelledby="brief-heading">
       <h2 id="brief-heading"><span data-language="es">Caso de estudio</span><span data-language="en" hidden>Design brief</span></h2>
@@ -237,5 +239,12 @@
           </ul>
 </section>
   </main>
+  <dialog class="midterm-image-dialog" aria-label="Imagen ampliada" data-label-en="Enlarged image">
+    <form method="dialog">
+      <button autofocus><span data-language="es">Cerrar</span><span data-language="en" hidden>Close</span></button>
+    </form>
+    <img alt="">
+    <a class="midterm-image-original" target="_blank" rel="noopener"><span data-language="es">Abrir en tamaño original</span><span data-language="en" hidden>Open original size</span></a>
+  </dialog>
 </body>
 </html>
