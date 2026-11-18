@@ -15,3 +15,5 @@
 .week-document .evidence>div,.week-document .evidence>aside{align-self:center;min-width:0}
 .week-document .evidence>.gallery{padding-top:0}
 .week-document .evidence>.printer-photo{position:static;top:auto}
+
+@media(max-width:620px){.navlinks{flex-wrap:wrap;row-gap:8px}}
