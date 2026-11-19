@@ -121,7 +121,7 @@ a { color: inherit; }
 .midterm-stage-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-  align-items: start;
+  align-items: center;
   gap: clamp(20px, 4vw, 42px);
 }
 .midterm-stage-copy > p:first-of-type { margin-top: 0; }
@@ -150,6 +150,18 @@ a { color: inherit; }
 }
 .midterm-gallery figcaption { color: var(--muted); font-size: 14px; }
 .midterm-gallery figure:only-child { grid-column: 1 / -1; }
+.midterm-gallery-continuation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px auto 0;
+}
+.midterm-gallery-continuation figure {
+  flex: 0 1 290px;
+  max-width: 100%;
+}
+.midterm-gallery-continuation .midterm-wide { flex-basis: 620px; }
 .midterm-gallery a { display: block; width: fit-content; max-width: 100%; margin: auto; }
 .midterm-gallery img {
   display: block;
