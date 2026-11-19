@@ -11,9 +11,20 @@
     es: { weeks: 'Semanas', all: 'Todas las semanas', previous: 'Semana anterior', next: 'Semana siguiente', soon: 'Próximamente', navigation: 'Navegación entre semanas', week: 'Semana' },
     en: { weeks: 'Weeks', all: 'All weeks', previous: 'Previous week', next: 'Next week', soon: 'Coming soon', navigation: 'Weekly navigation', week: 'Week' }
   };
+  const menuLabels = {
+    es: { home: 'Inicio', about: 'Nosotros', project: 'Proyecto final', midterm: 'Revisión interciclo', menu: 'Principal', institutions: 'Instituciones' },
+    en: { home: 'Home', about: 'About', project: 'Final Project', midterm: 'Midterm Review', menu: 'Main', institutions: 'Institutions' }
+  };
   function render() {
-    const text = labels[document.documentElement.lang === 'en' ? 'en' : 'es'];
-    document.querySelectorAll('[data-weeks-link]').forEach(link => { link.textContent = text.weeks; });
+    const language = document.documentElement.lang === 'en' ? 'en' : 'es';
+    const text = labels[language];
+    const menu = menuLabels[language];
+    document.querySelectorAll('[data-nav-label]').forEach(link => {
+      const key = link.dataset.navLabel;
+      link.textContent = key === 'weeks' ? text.weeks : menu[key];
+    });
+    document.querySelector('.navlinks')?.setAttribute('aria-label', menu.menu);
+    document.querySelector('.institutions')?.setAttribute('aria-label', menu.institutions);
     document.querySelectorAll('.week-pagination').forEach(nav => {
       const current = Number(nav.dataset.week);
       const index = publishedWeeks.findIndex(week => week.number === current);

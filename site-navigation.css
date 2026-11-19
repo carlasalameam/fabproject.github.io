@@ -7,6 +7,17 @@
 .week-pagination .next{text-align:right}
 .week-pagination .week-nav-all{font-size:12px;text-align:center;color:var(--blue);padding:12px;text-decoration:underline}
 .navlinks{gap:16px}
+.institutions .institution {
+  display: grid;
+  place-items: center;
+}
+.institutions .institution img {
+  position: static;
+  transform: none;
+  width: 100%;
+  height: min(100%, 34px);
+  object-fit: contain;
+}
 @media(max-width:1150px){.nav{flex-wrap:wrap;gap:14px;padding:16px 0}.institutions{order:2;flex:0 0 100%;gap:24px}.navlinks{margin-left:auto}.tools{order:1}}
 @media(max-width:620px){.navlinks{order:3;justify-content:center;width:100%;gap:16px;margin:0}.tools{order:0}.week-document .week-pagination{grid-template-columns:1fr 1fr;gap:12px}.week-pagination .week-nav-all{grid-column:1/-1;grid-row:2}.week-pagination strong{font-size:20px}.week-pagination .week-nav-link,.week-pagination .week-nav-disabled{padding:13px}}
 
